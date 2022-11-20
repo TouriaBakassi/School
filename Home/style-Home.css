@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family:Raleway ;
+    
+}
+/* ...........................Start Nav .................................... */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, .3);
+    padding: 20px 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* nav #bar{
+    display: none; 
+
+} */
+.fa-bars{
+      display: none;  
+    color: black;
+    /* padding-right: 50px; */
+
+}
+nav #logo h1 a{
+text-decoration: none;
+color: rgb(95, 207, 128);
+font-size: 30px;
+font-weight: 700;
+}
+nav ul{
+    display: inline-block;
+    position: relative;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+padding: 10px 15px;
+}
+.btn{
+    background-color: rgb(58, 193, 98);
+    border-radius: 40px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    /* margin-left: 5px; */
+}
+.btn:hover{
+    background-color: rgb(52, 183, 91);
+}
+.btn a{
+    color: white;
+}
+.btn a:hover{
+    color: white;  
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+nav ul li a:active{
+color: rgb(58, 193, 98); 
+}
+nav ul li a:hover{
+ color: rgb(58, 193, 98);  
+}
+nav ul ul{
+    position: absolute;
+    top: 40px;
+    /* left: -80px;
+    right: 0px; */
+    width: 200px;
+    box-shadow: 0 10 15 rgba(0, 0, 0, .5);
+    transition: all .3s ease-in-out;
+    text-align: center;
+    background-color: gainsboro;
+    display: none;
+    border-radius: 1%;
+}
+nav ul ul li{
+    padding: 20px 40px;
+}
+nav ul ul li:hover{
+    border-bottom: 4px solid gray;
+
+}
+nav ul li:hover >ul{
+    display: block;
+}
+nav ul ul ul{
+    position: absolute;
+    top: 6px;
+    left:-200px;
+    /* right: 180px; */
+width: 200px;
+box-shadow: 0 10 15 rgba(0, 0, 0, .5);
+background-color: gainsboro;
+display: none;
+transition: all ease-in-out;
+border-radius: 1%;
+}
+nav ul ul ul li{
+    padding: 20px 40px;
+}
+nav ul ul ul li:hover{
+    border-bottom: 4px solid gray;
+}
+nav ul ul li:hover>ul{
+    display: block;
+}
+/* ...........................End Nav .................................... */
+/* ...........................Start Sect1 .................................... */
+.sect1{
+    /* height: 80vh; */
+    background:rgba(0, 0, 0, .4)url(../images/hero-bg.jpg);
+    background-blend-mode: darken;
+background-position: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: top;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+/* height: 80vh; */
+}
+.sect1 .home{
+    padding: 120px 90px 100px 90px;
+color: white;
+width: 100%;
+}
+.sect1 h1{
+    font-size: 45px;
+    font-weight: 800;
+    width: 40%;
+}
+.sect1 p{
+    font-size: 26px;
+    font-weight: 500;
+    padding: 15px 0px;
+    color: gainsboro; 
+}
+.sect1 button a{
+    text-decoration: none;
+    /* padding: 30px 40px; */
+    margin: 50px 0px;
+    color: white;
+}
+.sect1 button{
+    padding: 10px 30px;
+    margin: 20px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 40px;
+    transition: all .4s ease-in-out;
+
+}
+.sect1 button:hover{
+    transition: all .4s ease-in-out;
+    background: rgb(95, 207, 128);
+    border: 2px solid rgb(95, 207, 128);
+    
+}
+
+/* ...........................End Sect1 .................................... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ..............................Media Qr (1100px) .................................... */
+
+@media screen and (max-width: 1100px) {
+    /* ...........................Start Nav .................................... */
+
+   .fa-bars{
+    display: block;  
+    margin-left: 10px;
+}
+nav ul{
+    display: none;
+    position: fixed;
+    background-color: gainsboro;
+    border-radius: 1%;
+    height: 100vh;
+    width: 90%;
+    top: 10%;
+    padding: 20px;
+} 
+nav ul.active{
+    display: block;
+    position: fixed;
+    background-color: gainsboro;
+    border-radius: 1%;
+    height: 100vh;
+    width: 90%;
+    top: 10%;
+    padding: 20px;
+} 
+nav ul li{
+    display: block;
+    padding: 20px 30px;
+}
+nav ul li a{
+    font-size: 20px;
+font-weight: 700;
+}
+.btn {
+    padding: 10px;
+     border-radius: 10px;
+     width: 170px;
+     text-align: center;
+}
+nav ul ul{
+    position: absolute;
+    top: -300px;
+    /* width: 220px;
+    left: 170px; */
+    width:80%;
+    height: 40vh;
+    /* left: 170px; */
+    box-shadow: 0 10 15 rgba(0, 0, 0, .5);
+    transition: all .3s ease-in-out;
+    text-align: center;
+    background-color: rgb(214, 169, 169);
+    /* display: block; */
+    border-radius: 1%;
+    z-index: 1;
+}
+nav ul ul ul{
+    position: absolute;
+    top: -50px;
+    /* 
+width: 240px; */
+height: 60vh;
+width: 100%;left:0px;
+right: 10px;
+z-index: 5;
+box-shadow: 0 10 15 rgba(0, 0, 0, .5);
+background-color: rgb(222, 180, 180);
+/* display: block; */
+transition: all ease-in-out;
+border-radius: 1%;
+}
+/* ...........................End Nav .................................... */
+
+}
+
