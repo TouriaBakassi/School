@@ -1,177 +1,469 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-   font-family:Raleway ;
-    
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Raleway:wght@100;200;300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
 }
 /* ...........................Start Nav .................................... */
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, .3);
-    padding: 20px 80px;
-    width: 100%;
-    box-sizing: border-box;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 20px 80px;
+  width: 100%;
+  box-sizing: border-box;
 }
 /* nav #bar{
     display: none; 
 
 } */
-.fa-bars{
-      display: none;  
-    color: black;
-    /* padding-right: 50px; */
-
+.fa-bars {
+  display: none;
+  color: black;
+  font-size: 30px;
 }
-nav #logo h1 a{
-text-decoration: none;
-color: rgb(95, 207, 128);
-font-size: 30px;
-font-weight: 700;
+nav #logo h1 a {
+  text-decoration: none;
+  color: rgb(95, 207, 128);
+  font-size: 30px;
+  font-weight: 700;
 }
-nav ul{
-    display: inline-block;
-    position: relative;
+nav ul {
+  display: inline-block;
+  position: relative;
 }
-nav ul li{
-    display: inline-block;
-    position: relative;
-padding: 10px 15px;
+nav ul li {
+  display: inline-block;
+  position: relative;
+  padding: 10px 15px;
 }
-.btn{
-    background-color: rgb(58, 193, 98);
-    border-radius: 40px;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    /* margin-left: 5px; */
+.btn {
+  background-color: rgb(58, 193, 98);
+  border-radius: 40px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  /* margin-left: 5px; */
 }
-.btn:hover{
-    background-color: rgb(52, 183, 91);
+.btn:hover {
+  background-color: rgb(52, 183, 91);
 }
-.btn a{
-    color: white;
+.btn a {
+  color: white;
 }
-.btn a:hover{
-    color: white;  
+.btn a:hover {
+  color: white;
 }
-nav ul li a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
 }
-nav ul li a:active{
-color: rgb(58, 193, 98); 
+nav ul li a:active {
+  color: rgb(58, 193, 98);
 }
-nav ul li a:hover{
- color: rgb(58, 193, 98);  
+nav ul li a:hover {
+  color: rgb(58, 193, 98);
 }
-nav ul ul{
-    position: absolute;
-    top: 40px;
-    /* left: -80px;
+nav ul ul {
+  position: absolute;
+  top: 40px;
+  /* left: -80px;
     right: 0px; */
-    width: 200px;
-    box-shadow: 0 10 15 rgba(0, 0, 0, .5);
-    transition: all .3s ease-in-out;
-    text-align: center;
-    background-color: gainsboro;
-    display: none;
-    border-radius: 1%;
+  width: 200px;
+  box-shadow: 0 10 15 rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  background-color: gainsboro;
+  display: none;
+  border-radius: 1%;
 }
-nav ul ul li{
-    padding: 20px 40px;
+nav ul ul li {
+  padding: 20px 40px;
 }
-nav ul ul li:hover{
-    border-bottom: 4px solid gray;
-
+nav ul ul li:hover {
+  border-bottom: 4px solid gray;
 }
-nav ul li:hover >ul{
-    display: block;
+nav ul li:hover > ul {
+  display: block;
 }
-nav ul ul ul{
-    position: absolute;
-    top: 6px;
-    left:-200px;
-    /* right: 180px; */
-width: 200px;
-box-shadow: 0 10 15 rgba(0, 0, 0, .5);
-background-color: gainsboro;
-display: none;
-transition: all ease-in-out;
-border-radius: 1%;
+nav ul ul ul {
+  position: absolute;
+  top: 6px;
+  left: -200px;
+  /* right: 180px; */
+  width: 200px;
+  box-shadow: 0 10 15 rgba(0, 0, 0, 0.5);
+  background-color: gainsboro;
+  display: none;
+  transition: all ease-in-out;
+  border-radius: 1%;
 }
-nav ul ul ul li{
-    padding: 20px 40px;
+nav ul ul ul li {
+  padding: 20px 40px;
 }
-nav ul ul ul li:hover{
-    border-bottom: 4px solid gray;
+nav ul ul ul li:hover {
+  border-bottom: 4px solid gray;
 }
-nav ul ul li:hover>ul{
-    display: block;
+nav ul ul li:hover > ul {
+  display: block;
 }
 /* ...........................End Nav .................................... */
 /* ...........................Start Sect1 .................................... */
-.sect1{
-    /* height: 80vh; */
-    background:rgba(0, 0, 0, .4)url(../images/hero-bg.jpg);
-    background-blend-mode: darken;
-background-position: fixed;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: top;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-/* height: 80vh; */
+.sect1 {
+  background: rgba(0, 0, 0, 0.4) url(../images/hero-bg.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.sect1 .home{
-    padding: 120px 90px 100px 90px;
-color: white;
+.sect1 .home {
+  padding: 90px;
+  color: white;
+  width: 90%;
+}
+.sect1 .home h1 {
+  font-size: 44px;
+  font-weight: 800;
+  width: 50%;
+  font-family: Poppins,sans-serif;
+}
+.sect1 p {
+  font-size: 26px;
+  font-weight: 500;
+  padding: 15px 0px;
+  color: gainsboro;
+}
+.sect1 button a {
+  text-decoration: none;
+  /* padding: 30px 40px; */
+  margin: 50px 0px;
+  color: white;
+}
+.sect1 button {
+  padding: 10px 30px;
+  margin: 20px 0px;
+  font-size: 18px;
+  font-weight: 400;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 40px;
+  transition: all 0.4s ease-in-out;
+}
+.sect1 button:hover {
+  transition: all 0.4s ease-in-out;
+  background: rgb(95, 207, 128);
+  border: 2px solid rgb(95, 207, 128);
+}
+
+/* ...........................End Section 1 .................................... */
+/* ...................................... Start Section 2............................... */
+
+.sect2 {
+  padding: 80px 90px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+.sect2 .description{
+    width: 50%;
+    padding: 20px 20px 20px 5px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.sect2 .image-family{
+    width: 50%;
+}
+.sect2 .image-family img{
 width: 100%;
 }
-.sect1 h1{
-    font-size: 45px;
-    font-weight: 800;
-    width: 40%;
+.sect2 .test{
+   list-style: none;
 }
-.sect1 p{
-    font-size: 26px;
+.sect2 .test li{
+    padding: 10px ;
+    font-size: 17px;
     font-weight: 500;
-    padding: 15px 0px;
-    color: gainsboro; 
 }
-.sect1 button a{
-    text-decoration: none;
-    /* padding: 30px 40px; */
-    margin: 50px 0px;
-    color: white;
+.sect2 .test li:nth-child(1){
+    font-size: 24px;
+    color: black;
 }
-.sect1 button{
-    padding: 10px 30px;
-    margin: 20px 0px;
-    font-size: 18px;
-    font-weight: 400;
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 40px;
-    transition: all .4s ease-in-out;
-
-}
-.sect1 button:hover{
-    transition: all .4s ease-in-out;
-    background: rgb(95, 207, 128);
-    border: 2px solid rgb(95, 207, 128);
+.sect2 .test li:nth-child(2){
+    font-size: 15px;
     
 }
+.sect2 .test li i{
+  color: rgb(58, 193, 98);
+  font-size: 20px;
+  padding-right: 5px;
+}
+/* ...................................... End Section 2............................... */
+/* ...................................... Start Section 3............................... */
+.sect3{
+  padding: 50px 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(246, 247, 246);
+}
+.sect3 .number{
+    width: 25%;
+    text-align: center;
+}
+.sect3 .number h3{
+font-size: 50px;
+color: rgb(58, 193, 98);
+}
+.sect3 .number p{
+    font-size: 15px;
+    font-weight: 600;
+}
 
-/* ...........................End Sect1 .................................... */
+/* ...................................... End Section 3............................... */
+/* ...................................... Start Section 4............................... */
+.sect4{
+padding:70px 90px 40px 90px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+.sect4 .choose{
+width: 30%;
+padding: 45px 32px;
+background-color: rgb(95, 207, 128);
+color: white;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+.sect4 .choose h2{
+font-size: 35px;
+font-weight: 700;
+}
+.sect4 .choose p{
+font-size: 17px;
+font-weight: 400;
+margin: 25px 0px;
+}
+.more{
+  text-align: center;  
+}
+.sect4 .choose a{
+font-size: 16px;
+font-weight: 400;
+padding: 10px 30px ;
+text-decoration: none;
+color: white;
+background-color: rgba(167, 220, 183, 0.904);
+border-radius: 20px;
+}
+.sect4 .choose a:hover{
+    color: rgb(58, 193, 98);
+    background-color: white;
+    transition: all .5s ease-in-out;
+    }
+.sect4 .choose a i{
+    font-size: 15px;
+}
+.three-div{
+width: 69%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.one-div{
+width: 33%;
+padding: 25px;
+text-align: center;
+border: 1px solid rgb(238, 238, 238);
+margin: 20px 10px;
+}
+.one-div h3{
+   font-size: 22px;
+   margin: 20px 0px;
+    }
+.one-div p{
+ margin: 30px 0px;
+ color: grey;
+         }
+.one-div i{
+font-size: 30px;
+margin: 15px 0px;
+color: rgb(95, 207, 128);
+background-color: rgb(236, 249, 240);
+padding: 20px;
+border-radius: 50%;
+  }      
+/* ...................................... End Section 4............................... */
+/* ...................................... Start Section 5............................... */
+.sect5{
+    padding: 10px 90px 30px 90px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+}
+.sect5 .icoon{
+    padding: 20px;
+    width: 23%;
+    border: 1px solid rgb(238, 238, 238);
+    display: inline-block;
+margin-bottom: 20px;
+color: black;
+}
+.sect5 .icoon:hover{
+ border: 1px solid rgb(58, 193, 98);
+transition: all .5s ease-in-out;
+}
+.sect5 .icoon h4{
+    display: inline-block;
+    color: rgba(4, 3, 3, 0.7);
+} 
+.sect5 .icoon:hover h4{
+    display: inline-block;
+    color: rgb(58, 193, 98);
+    transition: all .5s ease-in-out;
+} 
+.sect5 .icoon i{
+    font-size: 26px;
+    padding: 0px 10px 0px 0px;
+} 
+.sect5 .icoon1 i{
+    color: #ffc107;
+} 
+.sect5 .icoon2 i{
+   color: #0d6efd;
+} 
+.sect5 .icoon3 i{
+    color: rgb(232, 3, 104);
+} 
+.sect5 .icoon4 i{
+    color: rgb(227, 97, 255);
+} 
+.sect5 .icoon5 i{
+    color: rgb(71, 174, 255);
+} 
+.sect5 .icoon6 i{
+    color: rgb(255, 167, 110);
+} 
+.sect5 .icoon7 i{
+    color: rgb(17, 219, 207);
+} 
+.sect5 .icoon8 i{
+    color: rgb(66, 51, 255);
+} 
+.sect5 .icoon9 i{
+    color: rgb(178, 144, 79);
+} 
+.sect5 .icoon10 i{
+    color: rgb(178, 9, 105);
+} 
+.sect5 .icoon11 i{
+    color: rgb(255, 88, 40);
+} 
+.sect5 .icoon12 i{
+    color: rgb(41, 204, 97);
+} 
+/* ...................................... End Section 5............................... */
+
+
+
+
+
+
+
+
+
+
+/* ...................................... Start Section 6............................... */
+.sect6{
+    padding: 50px 90px;
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+.prof{
+width: 32%;
+margin: 10px 0px;
+border: 1px solid rgb(218, 218, 218);
+}
+.prof .prof-photo{
+    width: 100%;
+
+}
+.prof .prof-photo img{
+    width: 100%;
+}
+.prof .descript{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 20px;
+}
+.prof .descript .titles{
+ margin: 20px 0px ;
+ color: dimgray;
+}
+.prof .descript p{
+ font-size: 14px;
+ font-weight: 500;
+ font-style: italic;
+ color: rgb(167, 167, 167);
+}
+.prof .descript .media{
+    margin: 20px 0px;
+    font-size: 22px;
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+.prof .descript .media i:hover{
+   transition: all .2s ease-in-out;
+    color: rgb(95, 207, 128);
+}
+/* ...................................... End Section 6............................... */
+/* ...................................... Start Section 7............................... */
+
+/* ...................................... End Section 7............................... */
+/* ...................................... Start Section 8............................... */
+
+/* ...................................... End Section 8............................... */
+/* ...................................... Start Section 9............................... */
+
+/* ...................................... End Section 9............................... */
+/* ...................................... Start Section 10............................... */
+
+/* ...................................... End Section 10............................... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -188,13 +480,12 @@ width: 100%;
 /* ..............................Media Qr (1100px) .................................... */
 
 @media screen and (max-width: 1100px) {
-    /* ...........................Start Nav .................................... */
-
-   .fa-bars{
-    display: block;  
+  /* ...........................Start Nav .................................... */
+  .fa-bars {
+    display: block;
     margin-left: 10px;
-}
-nav ul{
+  }
+  nav ul {
     display: none;
     position: fixed;
     background-color: gainsboro;
@@ -203,63 +494,159 @@ nav ul{
     width: 90%;
     top: 10%;
     padding: 20px;
-} 
-nav ul.active{
+  }
+  nav ul.active {
     display: block;
     position: fixed;
     background-color: gainsboro;
     border-radius: 1%;
     height: 100vh;
-    width: 90%;
+    width: 80%;
     top: 10%;
     padding: 20px;
-} 
-nav ul li{
+
+    align-self: center;
+    overflow: scroll;
+  }
+  nav ul li {
     display: block;
     padding: 20px 30px;
-}
-nav ul li a{
+  }
+  nav ul li a {
     font-size: 20px;
-font-weight: 700;
-}
-.btn {
+    font-weight: 700;
+  }
+  .btn {
     padding: 10px;
-     border-radius: 10px;
-     width: 170px;
-     text-align: center;
-}
-nav ul ul{
+    border-radius: 10px;
+    width: 170px;
+    text-align: center;
+  }
+  nav ul ul {
     position: absolute;
     top: -300px;
-    /* width: 220px;
-    left: 170px; */
-    width:80%;
-    height: 40vh;
-    /* left: 170px; */
-    box-shadow: 0 10 15 rgba(0, 0, 0, .5);
-    transition: all .3s ease-in-out;
+    width: 94%;
+    height: 60vh;
+    box-shadow: 0 10 15 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
     text-align: center;
     background-color: rgb(214, 169, 169);
-    /* display: block; */
     border-radius: 1%;
     z-index: 1;
-}
-nav ul ul ul{
+  }
+  nav ul ul ul {
     position: absolute;
-    top: -50px;
-    /* 
-width: 240px; */
-height: 60vh;
-width: 100%;left:0px;
-right: 10px;
-z-index: 5;
-box-shadow: 0 10 15 rgba(0, 0, 0, .5);
-background-color: rgb(222, 180, 180);
-/* display: block; */
-transition: all ease-in-out;
-border-radius: 1%;
+    top: 50px;
+    height: 60vh;
+    width: 100%;
+    left: 0px;
+    right: 10px;
+    z-index: 5;
+    box-shadow: 0 10 15 rgba(0, 0, 0, 0.5);
+    background-color: rgb(222, 180, 180);
+    transition: all ease-in-out;
+    border-radius: 1%;
+  }
+  /* ...........................End Nav .................................... */
+/* ......................................Section 1............................... */
+
+  .sect1 {
+    height: 100vh;
+    padding: 50px;
+  }
+  .sect1 .home {
+    padding: 30px;
+  }
+/* ......................................Section 2............................... */
+.sect2{
+    padding: 40px ;
+}  
+.sect2 .description{
+    width: 100%;
+  padding: 5px;
+  margin-top: 20px;
 }
-/* ...........................End Nav .................................... */
+
+.sect2 .image-family{
+    width: 100%;
+}
+/* ......................................Section 3............................... */
+.sect3{
+    padding: 40px;
+}
+.sect3 .number{
+    width: 50%;
+    margin-top: 20px;
+}
+/* ......................................Section 4............................... */
+ .sect4{
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+.sect4 .choose{
+    width: 100%;
+    padding: 28px;
+    }
+
+    .sect4 .choose h2{
+        font-size: 30px;
+        font-weight: 700;
+        }
+        .sect4 .choose p{
+        font-size: 15px;
+        font-weight: 400;
+        margin: 25px 0px;
+        }
+        /* .sect4 .choose a{
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 30px ;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: rgba(167, 220, 183, 0.904);
+        border-radius: 20px;
+        margin: 50px;
+        } */
+.three-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    flex-wrap: wrap;
+    }
+    .one-div{
+    width: 100%;
+    padding: 25px;
+    margin: 20px 0px;
+    } 
+ /* ......................................Section 5............................... */
+ .sect5{
+    padding: 40px;
+    }
+.sect5 .icoon{
+ width: 100%; 
+    }
+/* ......................................Section 6............................... */
+.sect6{
+    padding: 40px;
+}
+.prof{
+    width: 100%;
+   
+    }
+/* ......................................Section 7............................... */
+
+/* ......................................Section 8............................... */
+
+/* ......................................Section 9............................... */
+
+/* ......................................Section 10............................... */
+
+/* ......................................Section 11............................... */
+
 
 }
-
