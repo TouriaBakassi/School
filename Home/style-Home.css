@@ -618,20 +618,20 @@ font-weight: 400;
 /* ...................................... End Section 8............................... */
 /* ...................................... Start Section 9............................... */
 .sect9{
-padding: 50px 90px;
+padding: 70px 90px;
 display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
 }
 .pricing-item{
-  width: 23%;
+  width: 23.3%;
   text-align: center;
-  border: 1px solid rgb(248, 248, 248);
+  border: 1px solid rgb(242, 242, 242);
   color: rgb(119, 119, 119);
 }
 .pricing-head{
-  padding: 25px;
+  padding:20px 25px;
   background-color: rgb(248, 248, 248);
 }
 .pricing-body{ 
@@ -663,7 +663,7 @@ flex-wrap: wrap;
   font-weight: 600;
  }
 .pricing-foot{
-  padding:30px ;
+  padding:28px 30px ;
   background-color: rgb(248, 248, 248);
 }
 .pricing-foot a{
@@ -676,11 +676,26 @@ color: white;
 border-radius: 40px;
 transition: all .3s ease-in-out;
 }
-.pricing-foot a{
+.pricing-foot a:hover{
  background-color: rgb(84, 181, 113);
 transition: all .3s ease-in-out;
 }
-
+.item1 .pricing-body ul li:nth-child(4){
+  text-decoration: line-through;
+  color:rgb(177, 177, 177) ;
+}
+.item1 .pricing-body ul li:nth-child(5){
+  text-decoration: line-through;
+  color:rgb(177, 177, 177) ;
+}
+.item2 .pricing-body ul li:nth-child(5){
+  text-decoration: line-through;
+  color:rgb(177, 177, 177) ;
+}
+.item2 .pricing-head{
+  background-color: rgb(95, 207, 128);
+  color: white;
+}
 /* ...................................... End Section 9............................... */
 /* ...................................... Start Section 10............................... */
 
@@ -904,7 +919,13 @@ transition: all .3s ease-in-out;
     margin-bottom: 200px;
   }
 /* ......................................Section 9............................... */
-
+.sect9{
+  padding: 40px;
+  }
+  .pricing-item{
+    width: 48%;
+    margin-bottom: 20px;
+  }
 /* ......................................Section 10............................... */
 
 /* ......................................Section 11............................... */
@@ -942,4 +963,12 @@ transition: all .3s ease-in-out;
   .event{
     margin-bottom: 380px;
   }
+  /* .................................Section 9........................... */
+  .sect9{
+    padding: 40px;
+    }
+    .pricing-item{
+      width: 100%;
+      margin-bottom: 20px;
+    }
 }
