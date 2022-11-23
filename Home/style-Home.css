@@ -76,18 +76,21 @@ nav ul ul {
   position: absolute;
   top: 40px;
   width: 200px;
-  box-shadow: 0 10 15 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10 30 rgb(0, 0,0,0.5);
   transition: all 0.3s ease-in-out;
   text-align: center;
-  background-color: gainsboro;
+  background-color: white;
   display: none;
   border-radius: 1%;
 }
 nav ul ul li {
   padding: 20px 40px;
+  border-bottom: 4px solid transparent;
+
 }
 nav ul ul li:hover {
   border-bottom: 4px solid gray;
+  background-color: rgb(134, 210, 145);
 }
 nav ul li:hover > ul {
   display: block;
@@ -99,16 +102,18 @@ nav ul ul ul {
   /* right: 180px; */
   width: 200px;
   box-shadow: 0 10 15 rgba(0, 0, 0, 0.5);
-  background-color: gainsboro;
+  background-color: white;
   display: none;
   transition: all ease-in-out;
   border-radius: 1%;
 }
 nav ul ul ul li {
   padding: 20px 40px;
+  border-bottom: 4px solid transparent
 }
 nav ul ul ul li:hover {
   border-bottom: 4px solid gray;
+
 }
 nav ul ul li:hover > ul {
   display: block;
@@ -718,7 +723,7 @@ font-weight: 500;
 /* ...................................... End Section 9............................... */
 /* ...................................... Start Section 10............................... */
 .sect10{
-  padding: 50px 90px;
+  padding: 70px 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -825,7 +830,7 @@ padding: 10px 0px;
 }
 .message{
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px 0px 20px 0px;
 
 }
 .message textarea{
@@ -836,6 +841,22 @@ outline: none;border-radius: 5px;
 border: 1px solid rgb(199, 199, 199);
 font-size: 14px;
 font-weight: 500;
+}
+
+.formulaire a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: rgb(95, 207, 128);
+  padding: 12px 32px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all .3s ease-in-out;  
+}
+.formulaire a:hover{
+  background-color: rgb(58, 193, 98);
+  transition: all .3s ease-in-out;
 }
 /* ...................................... End Section 10............................... */
 /* ...................................... Start Section 11............................... */
