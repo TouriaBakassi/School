@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: Raleway;
 }
+html{
+  scroll-behavior: smooth;
+}
 /* ...........................Start Nav .................................... */
 nav {
   display: flex;
@@ -15,11 +18,11 @@ nav {
   padding: 20px 80px;
   width: 100%;
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
 }
-/* nav #bar{
-    display: none; 
-
-} */
 .fa-bars {
   display: none;
   color: black;
@@ -375,19 +378,128 @@ transition: all .5s ease-in-out;
     color: rgb(41, 204, 97);
 } 
 /* ...................................... End Section 5............................... */
-
-
-
-
-
-
-
-
-
-
 /* ...................................... Start Section 6............................... */
 .sect6{
-    padding: 50px 90px;
+  padding:50px 90px;
+}
+.grand-titre h5{
+color: rgb(160, 160, 160);
+font-size: 13px;
+font-weight: 600;
+letter-spacing: 1.5px;
+display: inline-block;
+
+}
+.grand-titre .line{
+  width: 120px;
+  height: 1px;
+  background-color: rgb(95, 207, 128);
+  display: inline-block;
+margin: 0px 0px 3px 10px;
+  }
+.grand-titre h2{
+  font-size: 34px;
+  font-weight: 800;
+  margin: 10px 0px 20px 0px;
+  }
+.courses{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+.cours{
+  width: 32%;
+  margin: 10px 0px;
+border: 1px solid rgb(218, 218, 218);
+border-radius: 5px;
+}
+.image-cours{
+  width: 100%;
+}
+.image-cours img{
+  width: 100%;
+}
+.prix{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.prix a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(58, 193, 98);
+  font-size: 14px;
+  color: white;
+}
+.prix a:hover{
+  transition: all .3s ease-in-out;
+  background-color: rgb(43, 143, 73);
+  transform: scale(1.01);
+}
+.prix h4{
+  font-size: 20px;
+  padding: 10px;
+}
+.title-cours{
+  padding: 10px 15px;
+}
+.title-cours h4{
+  font-size: 20px;
+}
+.title-cours h4:hover{
+  color: rgb(58, 193, 98);
+  transition: all .2s ease-in-out;
+}
+.title-cours p{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 13px 0px;
+  color: rgb(160, 160, 160);
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.prof-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px 15px 15px;
+}
+.img-prof{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-prof img{
+  width: 50px;
+  height: 50px;
+border-radius: 50%;
+}
+.img-prof h5{
+  font-size: 16px;
+  padding: 0px 10px;
+  color: gray;
+}
+.like-cours{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  font-size: 18px;
+  color: gray;
+}
+.like-cours p{
+  padding: 0px 8px;
+}
+.like-cours i:hover{
+ color: rgb(58, 193, 98);
+ transition: all .3s ease-in-out;
+}
+/* ...................................... End Section 6............................... */
+/* ...................................... Start Section 7............................... */
+.sect7{
+    padding: 20px 90px 50px 90px;
     display: flex;
     justify-content: space-between;
 align-items: center;
@@ -417,6 +529,11 @@ border: 1px solid rgb(218, 218, 218);
  margin: 20px 0px ;
  color: dimgray;
 }
+.prof .descript .titles h5{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 3px;
+   }
 .prof .descript p{
  font-size: 14px;
  font-weight: 500;
@@ -426,26 +543,170 @@ border: 1px solid rgb(218, 218, 218);
 .prof .descript .media{
     margin: 20px 0px;
     font-size: 22px;
-    color: rgb(163, 163, 163);
+    color: rgb(121, 142, 128);
     cursor: pointer;
 }
 .prof .descript .media i:hover{
    transition: all .2s ease-in-out;
     color: rgb(95, 207, 128);
 }
-/* ...................................... End Section 6............................... */
-/* ...................................... Start Section 7............................... */
-
 /* ...................................... End Section 7............................... */
 /* ...................................... Start Section 8............................... */
+.sect8{
+padding: 50px 90px  ;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+margin-bottom: 180px;
+}
+.event{
+  width: 49%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.image-event{
+  width: 100%;
+  overflow: hidden;
+}
+.image-event img{
+  width: 100%;
+  transition: all .5s ease-in-out;
 
+   /* display: block; */ 
+}
+.event .description-event{
+  background-color: white;
+  position: absolute ;
+  width: 90%;
+  left: 5%;
+  top: 82%;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  border-top: 4px solid white;
+}
+.description-event h4{
+  margin: 10px 0px;
+  font-size: 20px;
+}
+.event:hover img{
+  transform:scale(1.1);
+  transition: all .5s ease-in-out;
+}
+.event:hover .description-event{
+  border-top: 4px solid rgb(58, 193, 98);
+  transition: all .3s ease-in-out;
+}
+.event:hover h4{
+  color: rgb(58, 193, 98);
+  transition: all .3s ease-in-out;
+}
+.description-event address{
+  margin: 15px 0px;
+  font-size: 16px;
+font-weight: 400;
+  color: rgb(105, 104, 104);
+}
+.description-event p{
+  margin: 10px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(115, 115, 115);
+  text-align: start;
+}
 /* ...................................... End Section 8............................... */
 /* ...................................... Start Section 9............................... */
+.sect9{
+padding: 50px 90px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+.pricing-item{
+  width: 23%;
+  text-align: center;
+  border: 1px solid rgb(248, 248, 248);
+  color: rgb(119, 119, 119);
+}
+.pricing-head{
+  padding: 25px;
+  background-color: rgb(248, 248, 248);
+}
+.pricing-body{ 
+  padding: 10px ;
+}
+.pricing-body h3{ 
+  color: rgb(95, 207, 128);
+  font-size: 38px;
+  font-weight: 700;
+}
+.pricing-body h3 span{ 
+  color: rgb(177, 177, 177);
+  font-size: 16px;
+  font-weight: 500;
+}
+.pricing-body h3 sup{ 
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0px 3px;
+}
+.pricing-body ul{ 
+ padding: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+.pricing-body ul li{ 
+  padding: 10px 0px;
+  font-size: 14px;
+  font-weight: 600;
+ }
+.pricing-foot{
+  padding:30px ;
+  background-color: rgb(248, 248, 248);
+}
+.pricing-foot a{
+  padding:10px 35px ;
+  background-color: rgb(95, 207, 128);
+text-decoration: none;
+font-size: 14px;
+font-weight: 600;
+color: white;
+border-radius: 40px;
+transition: all .3s ease-in-out;
+}
+.pricing-foot a{
+ background-color: rgb(84, 181, 113);
+transition: all .3s ease-in-out;
+}
 
 /* ...................................... End Section 9............................... */
 /* ...................................... Start Section 10............................... */
 
 /* ...................................... End Section 10............................... */
+/* ...................................... Start Section 11............................... */
+
+/* ...................................... End Section 11............................... */
+/* ...................................... Start Section 12............................... */
+
+/* ...................................... End Section 12............................... */
+/* ...................................... Start Section 13............................... */
+
+/* ...................................... End Section 13............................... */
+/* ...................................... Start Section 14............................... */
+
+/* ...................................... End Section 14............................... */
+/* ...................................... Start Section 15............................... */
+
+/* ...................................... End Section 15............................... */
+/* ...................................... Start Section 16............................... */
+
+/* ...................................... End Section 16............................... */
+
+
+
+
 
 
 
@@ -600,17 +861,7 @@ border: 1px solid rgb(218, 218, 218);
         font-weight: 400;
         margin: 25px 0px;
         }
-        /* .sect4 .choose a{
-        font-size: 16px;
-        font-weight: 400;
-        padding: 10px 30px ;
-        text-decoration: none;
-        text-align: center;
-        color: white;
-        background-color: rgba(167, 220, 183, 0.904);
-        border-radius: 20px;
-        margin: 50px;
-        } */
+        
 .three-div{
     width: 100%;
     display: flex;
@@ -632,16 +883,26 @@ border: 1px solid rgb(218, 218, 218);
     }
 /* ......................................Section 6............................... */
 .sect6{
+  padding: 40px;
+}
+.cours{
+  width: 100%;
+}
+/* ......................................Section 7............................... */
+.sect7{
     padding: 40px;
 }
 .prof{
     width: 100%;
-   
     }
-/* ......................................Section 7............................... */
-
 /* ......................................Section 8............................... */
-
+.sect8{
+  padding: 40px;
+}
+.event{
+    width: 100%;
+    margin-bottom: 200px;
+  }
 /* ......................................Section 9............................... */
 
 /* ......................................Section 10............................... */
@@ -649,4 +910,36 @@ border: 1px solid rgb(218, 218, 218);
 /* ......................................Section 11............................... */
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .event{
+    margin-bottom: 380px;
+  }
 }
