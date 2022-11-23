@@ -15,7 +15,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
-  padding: 20px 80px;
+  padding: 20px 90px;
   width: 100%;
   box-sizing: border-box;
   position: sticky;
@@ -49,7 +49,6 @@ nav ul li {
   border: none;
   color: white;
   padding: 10px 20px;
-  /* margin-left: 5px; */
 }
 .btn:hover {
   background-color: rgb(52, 183, 91);
@@ -67,17 +66,15 @@ nav ul li a {
   font-size: 16px;
   font-weight: 500;
 }
-nav ul li a:active {
+nav ul li a:hover {
   color: rgb(58, 193, 98);
 }
-nav ul li a:hover {
+nav ul li a:focus{
   color: rgb(58, 193, 98);
 }
 nav ul ul {
   position: absolute;
   top: 40px;
-  /* left: -80px;
-    right: 0px; */
   width: 200px;
   box-shadow: 0 10 15 rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
@@ -629,13 +626,20 @@ flex-wrap: wrap;
   text-align: center;
   border: 1px solid rgb(242, 242, 242);
   color: rgb(119, 119, 119);
+  transition: all .3s ease-in-out;
 }
+.pricing-item:hover{
+  border: 1px solid rgb(84, 181, 113);
+ transition: all .3s ease-in-out;
+ }
 .pricing-head{
   padding:20px 25px;
   background-color: rgb(248, 248, 248);
 }
 .pricing-body{ 
   padding: 10px ;
+  border: 1px solid rgb(248, 248, 248);
+  transition: all .3s ease-in-out;
 }
 .pricing-body h3{ 
   color: rgb(95, 207, 128);
@@ -696,9 +700,143 @@ transition: all .3s ease-in-out;
   background-color: rgb(95, 207, 128);
   color: white;
 }
+.advanced{
+  position: relative;
+  overflow: hidden;
+}
+.advanced::before{
+  content: "Advanced";
+  position: absolute;
+  top: 23px;
+  right: -50px;
+  background-color: rgb(95, 207, 128);
+  color: white;
+  padding: 5px 50px;
+  transform: rotate(45deg);
+font-weight: 500;
+}
 /* ...................................... End Section 9............................... */
 /* ...................................... Start Section 10............................... */
+.sect10{
+  padding: 50px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.map{
+  width: 100%;
+}
+.map iframe{
+  width: 100%;
+  border: 5px solid rgb(95, 207, 128);
+}
+.contact{
+  width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+padding-top: 40px;
+}
+.address{
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.address-item {
+padding: 15px 0px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.address-item div{
+  display: inline-block;
+  padding: 0px 10px;
+  }
+.address-item h2{
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+  font-size: 23px;
+    }
+.address-item p{
+    font-size: 15px;
+  padding: 5px 0px;
+  color: rgb(152, 166, 154);
+  
+    }
+.address-item i{
+    font-size: 18px;
+  padding: 12px;
+  color: rgb(134, 210, 145);
+  background-color: rgb(236, 249, 240);
+  border-radius: 50%;
+  margin: 0px 10px;
+  transition: all .3s ease-in-out;
+    }
+  .address-item:hover i{
+    color: white;
+    background-color: rgb(58, 193, 98);
+    transition: all .3s ease-in-out;
+      }
+  .formulaire{
+width: 65%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+  } 
+.formulaire input:focus{
+border: 1px solid rgb(35, 185, 80);
+      }
+.formulaire textarea:focus{
+border: 1px solid rgb(35, 185, 80);
+              } 
+.full-name{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 0px;
+  }
+.full-name input{
+  width: 48%;
+  padding: 13px;
+  outline: none; border-radius: 5px;
+  border: 1px solid rgb(199, 199, 199);
+  font-size: 14px;
+  font-weight: 500;
+}  
+.subject{
+  width: 100%;
+  padding: 10px 0px;
 
+} 
+.subject input{
+  width: 100%;
+  padding: 13px;
+  outline: none;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.message{
+  width: 100%;
+  padding: 10px 0px;
+
+}
+.message textarea{
+  width: 100%;
+height: 25vh;
+padding: 13px;
+outline: none;border-radius: 5px;
+border: 1px solid rgb(199, 199, 199);
+font-size: 14px;
+font-weight: 500;
+}
 /* ...................................... End Section 10............................... */
 /* ...................................... Start Section 11............................... */
 
@@ -927,6 +1065,23 @@ transition: all .3s ease-in-out;
     margin-bottom: 20px;
   }
 /* ......................................Section 10............................... */
+.sect10{
+  padding: 40px;
+}
+.address{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.formulaire{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+    }
 
 /* ......................................Section 11............................... */
 
@@ -971,4 +1126,12 @@ transition: all .3s ease-in-out;
       width: 100%;
       margin-bottom: 20px;
     }
+  /* .................................Section 10........................... */
+  .full-name{
+    flex-direction: column;
+      }
+    .full-name input{
+      width: 100%;
+      margin-top: 20px;
+    } 
 }
