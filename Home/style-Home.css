@@ -860,6 +860,37 @@ font-weight: 500;
 }
 /* ...................................... End Section 10............................... */
 /* ...................................... Start Section 11............................... */
+.sect11{
+padding: 50px 90px;
+}
+/* End about 'grand-titre' class we were stylese before in Section  6 'courses' */
+.testimonials{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.testimonial{
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonial-photo{
+  width: 60px;
+  height: 60px;
+}
+.testimonial-photo img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
 
 /* ...................................... End Section 11............................... */
 /* ...................................... Start Section 12............................... */
