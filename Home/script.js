@@ -6,6 +6,11 @@ iconbar.addEventListener("click",()=>{
     list.classList.toggle("active"); 
 });
 
+$('.count').counterUp({
+    delay: 10,
+    time: 2000
+});
+
 $('.testimonials').slick({
     dots:true,
     arrows: true, 
@@ -31,3 +36,5 @@ $('.testimonials').slick({
         }
       ]
   });
+
+  

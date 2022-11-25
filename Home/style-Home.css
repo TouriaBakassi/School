@@ -84,7 +84,7 @@ nav ul ul {
   border-radius: 1%;
 }
 nav ul ul li {
-  padding: 20px 40px;
+  padding: 10px 40px;
   border-bottom: 4px solid transparent;
 
 }
@@ -108,7 +108,7 @@ nav ul ul ul {
   border-radius: 1%;
 }
 nav ul ul ul li {
-  padding: 20px 40px;
+  padding: 10px 40px;
   border-bottom: 4px solid transparent
 }
 nav ul ul ul li:hover {
@@ -861,25 +861,19 @@ font-weight: 500;
 /* ...................................... End Section 10............................... */
 /* ...................................... Start Section 11............................... */
 .sect11{
-padding: 50px 90px;;
+padding: 50px 90px;
 }
 /* End about 'grand-titre' class we were stylese before in Section  6 'courses' */
-/* .testimonials{
-  display: grid; 
-  grid-template: max-content;
-  gap: 30px;
-  /* align-items: center; */
-  /* flex-direction: row;
-   flex-wrap: wrap; 
-
-}*/
+ .testimonials{
+  margin: 10px;
+}
 .testimonial{
  position: relative;
 }
 .slick{
   margin: 40px 50px;
   padding: 50px;
-  border: 1px solid rgba(167, 220, 183, 0.904);
+  border: 1px solid rgb(215, 215, 215);
 }
 .testimonial-photo{
  width: 80px;
@@ -922,6 +916,18 @@ color: rgb(68, 68, 68);
  font-weight: 600;
  color: rgba(167, 220, 183, 0.904);
  }
+ .slick-next:before, .slick-prev:before {
+  opacity: 0;
+}
+.slick-dots li button:before{
+  font-size: 13px;
+  color: rgb(210, 210, 210);
+  opacity: .75;
+}
+.slick-dots li.slick-active button:before{
+  color: rgb(134, 210, 145);
+  opacity: 1;
+}
 
 
 /* ...................................... End Section 11............................... */
