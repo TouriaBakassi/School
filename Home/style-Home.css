@@ -861,45 +861,44 @@ font-weight: 500;
 /* ...................................... End Section 10............................... */
 /* ...................................... Start Section 11............................... */
 .sect11{
-padding: 50px 90px;
+padding: 50px 90px;;
 }
 /* End about 'grand-titre' class we were stylese before in Section  6 'courses' */
-.testimonials{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+/* .testimonials{
+  display: grid; 
+  grid-template: max-content;
+  gap: 30px;
+  /* align-items: center; */
+  /* flex-direction: row;
+   flex-wrap: wrap; 
+
+}*/
 .testimonial{
-  width: 44%;
-  padding:30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid rgb(201, 201, 201);
-  margin: 10px 30px;
-  position: relative;
+ position: relative;
+}
+.slick{
+  margin: 40px 50px;
+  padding: 50px;
+  border: 1px solid rgba(167, 220, 183, 0.904);
 }
 .testimonial-photo{
-  width: 100px;
-  height: 100px;
-  align-self: flex-start;
+ width: 80px;
+  height: 80px;
+ /*  align-self: flex-start*/
   position: absolute;
   padding: 10px ;
-  top: 22px;
-  left: -52px;
-  
 }
 .testimonial-photo img{
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0px;
+  left: -100px;
   object-fit: contain;border-radius: 5px;
 }
 .testimonial-name{
   align-self: flex-start;
-  padding: 10px 20px;
+  padding: 10px 20px,;
 }
 .testimonial-name h4{
   color: rgb(105, 104, 104);
@@ -910,6 +909,7 @@ padding: 50px 90px;
 .testimonial-content{
   text-align: center;
   margin:10px;
+  /* border: 1px solid gainsboro; */
 }
 .testimonial-content p{
  display: inline;
@@ -1218,4 +1218,31 @@ color: rgb(68, 68, 68);
       width: 100%;
       margin-top: 20px;
     } 
+/* ..........................Section 11..................... */
+.sect11{
+  padding: 40px;
+}
+.testimonial{
+  margin: 0px 0px;
+}
+.slick{
+  margin: 40px 50px;
+  padding: 10px;
+  max-height: 60vh;
+}
+.slick p{
+font-size: 16px;
+}
+.testimonial-photo{
+       position: relative;
+       padding: 10px ;
+      } 
+.testimonial-photo img{
+       width: 100%;
+       height: 100%;
+       position: relative;
+       top: 0px;
+       left: 0px;
+       object-fit: contain;border-radius: 5px;
+     }  
 }
