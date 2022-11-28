@@ -1058,7 +1058,46 @@ background-color:rgb(58, 193, 98) ;
   }
 /* ...................................... End Section 12............................... */
 /* ...................................... Start Section 13............................... */
-
+.sect13{
+  padding: 30px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+flex-wrap: wrap;
+background-color: rgb(238, 240, 239);
+}
+.copyright p{
+font-size: 14px;
+font-weight: 400;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+padding: 3px;
+color: rgb(45, 45, 45);
+}
+.copyright p:nth-child(2),.copyright span{
+  font-size: 13px;
+}
+.copyright span{
+  color: #47b869;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.copyright span:hover{
+  color: #5fcf80;
+  transition: all .3s ease;
+}
+.reseaux-social i{
+padding: 10px;
+margin: 0px 3px;
+color: white;
+background-color: #47b869;
+border-radius: 50%;
+transition: all .4s ease-in-out;
+}
+.reseaux-social i:hover{
+  transform: scale(0.9);
+  background-color: #5fcf80;
+  transition: all .4s ease-in-out;
+  }
 /* ...................................... End Section 13............................... */
 /* ...................................... Start Section 14............................... */
 

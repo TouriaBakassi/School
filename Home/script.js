@@ -10,11 +10,12 @@ iconbar.addEventListener("click",()=>{
 });
 //  Counter-Up for Numbers
 $('.count').counterUp({
-    delay: 10,
-    time: 2000
+    delay: 5,
+    time: 1500
 });
 // Slides the Testimonials with "Slick"
 $('.testimonials').slick({
+    delay:10,
     dots:true,
     arrows: true, 
     slidesToShow: 2,
