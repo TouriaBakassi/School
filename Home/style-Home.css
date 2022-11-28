@@ -1038,6 +1038,8 @@ color: rgb(58, 193, 98);
   padding: 8px 0px;
   border: none;
   position: relative;
+  font-size: 15px;
+  font-size: 500;
 }
 .newsletter .subscribe button{
   width: 32%;
@@ -1099,7 +1101,55 @@ transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   }
 /* ...................................... End Section 13............................... */
+/* ......................................TO TOP BUTTON................................... */
+/* .triangle{
+  height: 0;
+  width: 0;
+   border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+ border-bottom: 40px solid rgb(200, 200, 200);
+ position: fixed;
+ bottom: 3%;
+ right: 1%;
+} */
+.mini-triangle{
+  height: 40px;
+  width: 30px;
+  background-color: #47b869;
+ position: fixed;
+ bottom: 1%;
+ right: 1%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+.mini-triangle i{
+  color: white;
+  transform: translate(0%,100%);
+  animation: to-top 1s infinite ;
+}
+@keyframes to-top {
+  from{
+    opacity: 0;
+    transform: translateY(0.4rem);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(-0.2rem);
+  }
+}
 /* ...................................... Start Section 14............................... */
+.Introduction{
+  padding: 60px;
+  background-color: #47b869;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 
 /* ...................................... End Section 14............................... */
 /* ...................................... Start Section 15............................... */
