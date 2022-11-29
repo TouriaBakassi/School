@@ -32,6 +32,15 @@
     />
     <link rel="stylesheet" href="style-Home.css" />
     <title>School</title>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init('R3rkCugsrhkrt7L3X');
+            })();
+        </script>
+        <script src="./script.js" type="text/javascript"></script>
+<!-- ..................Emailjs.............. -->
   </head>
   <body>
     <!-- ................................. Start Nav  ................................-->
@@ -502,7 +511,7 @@
       </div>
     </section>
     <!-- ...................................... End Section9 .................................-->
-    <!-- ...................................... Start Section10 .................................-->
+    <!-- .................................... Start Section10 Contact ........................-->
 
     <section class="sect10 contact-and-map">
       <div class="map">
@@ -537,14 +546,13 @@
             </div>
           </div>
         </div>
-        <div class="formulaire">
+        <!-- ..............Formulaire........... -->
+        <div id="form" class="formulaire">
           <div class="full-name">
-            <input type="text" placeholder="Your Name" /><input
-              type="email"
-              placeholder="Your Email"
-            />
+            <input id="fullName" type="text" placeholder="Your Name" required/>
+            <input id="email_id" type="email" placeholder="Your Email" required/>
           </div>
-          <div class="subject"><input type="text" placeholder="Subject" /></div>
+          <div class="subject"><input id="subject" type="text" placeholder="Subject" required /></div>
           <div class="message">
             <textarea
               placeholder="Message"
@@ -552,9 +560,10 @@
               id="message"
               cols="30"
               rows="10"
+              required
             ></textarea>
           </div>
-          <div><a href="">Send Message</a></div>
+          <div> <a class="send" href="#form">Send Message</a></div>
         </div>
       </div>
     </section>
@@ -792,6 +801,5 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./script.js"></script>
   </body>
 </html>

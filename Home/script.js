@@ -106,3 +106,16 @@ follow3.addEventListener('click',()=>{
     follow3.style.color="green";
     localStorage.setItem("flwcour3",stor3);
 });
+// ..............Emailjs Pour la formulaire
+function SendMail(){
+let params={ 
+    from_name:document.getElementById("fullName").value,
+    email_id: document.getElementById("email_id").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+}
+emailjs.send("service_offjmqy","template_u82rcjr", params).then(function(res) {
+    alert('Success!'+ res.status);
+});
+};
+document.querySelector(".send").addEventListener("click",SendMail())
