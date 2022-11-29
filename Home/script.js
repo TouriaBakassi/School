@@ -107,15 +107,29 @@ follow3.addEventListener('click',()=>{
     localStorage.setItem("flwcour3",stor3);
 });
 // ..............Emailjs Pour la formulaire
-function SendMail(){
-let params={ 
-    from_name:document.getElementById("fullName").value,
-    email_id: document.getElementById("email_id").value,
-    subject: document.getElementById("subject").value,
-    message: document.getElementById("message").value,
-}
-emailjs.send("service_offjmqy","template_u82rcjr", params).then(function(res) {
-    alert('Success!'+ res.status);
-});
-};
-document.querySelector(".send").addEventListener("click",SendMail())
+
+//  let fullname= document.querySelector("#fullName");
+// let emailo= document.querySelector("#email_id").value;
+// let subjecto= document.querySelector("#subject").value;
+// let messagee= document.querySelector("#message").value
+// function sendMail(event){
+//     event.preventDefault();
+// var params={ 
+//     from_name : fullname ,
+//     email_id : emailo ,
+//     subject : subjecto ,
+//     message :  messagee
+// }
+// emailjs.send("service_offjmqy","template_u82rcjr", params).then(function(res) {
+//     alert('Success!'+ res.status);
+// });
+// };
+
+ let button= document.querySelector(".send");
+ button.addEventListener("click",(e)=>{
+e.preventDefault();
+console.log("heloo");
+ });
+
+
+
