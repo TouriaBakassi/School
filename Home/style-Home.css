@@ -843,7 +843,7 @@ font-size: 14px;
 font-weight: 500;
 }
 
-.formulaire a{
+/* .formulaire a{
   text-decoration: none;
   text-align: center;
   color: white;
@@ -855,6 +855,21 @@ font-weight: 500;
   transition: all .3s ease-in-out;  
 }
 .formulaire a:hover{
+  background-color: rgb(58, 193, 98);
+  transition: all .3s ease-in-out;
+} */
+.formulaire button{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: rgb(95, 207, 128);
+  padding: 12px 32px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all .3s ease-in-out;  
+}
+.formulaire button:hover{
   background-color: rgb(58, 193, 98);
   transition: all .3s ease-in-out;
 }

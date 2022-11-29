@@ -41,7 +41,7 @@ $('.testimonials').slick({
       ]
   });
 
-// ......................Localstorge for Courses-Like
+// ............................ Localstorge for Courses-Like
 var like1=document.querySelector('#Like-cour1');
 var like2=document.querySelector('#Like-cour2');
 var like3=document.querySelector('#Like-cour3');
@@ -74,7 +74,7 @@ like3.style.color="red";
 localStorage.setItem("cour3",count3);
 });
 
-// ......................Localstorge for Courses-Follow
+// ...........................  Localstorge for Courses-Follow
 var follow1=document.querySelector('#follow-cour1');
 var follow2=document.querySelector('#follow-cour2');
 var follow3=document.querySelector('#follow-cour3');
@@ -106,7 +106,8 @@ follow3.addEventListener('click',()=>{
     follow3.style.color="green";
     localStorage.setItem("flwcour3",stor3);
 });
-// ..............Emailjs Pour la formulaire
+// .......................... Emailjs Pour la formulaire
+
 let fullname= document.querySelector("#fullName").value;
 let emailo= document.querySelector("#email_id").value;
 let subjecto= document.querySelector("#subject").value;
@@ -114,14 +115,15 @@ let messagee= document.querySelector("#message").value
 function sendMail(){
     // event.preventDefault();
 var params={ 
-    from_name : fullname ,
-    email_id : emailo ,
-    subject : subjecto ,
+    from_name : fullname,
+    email_id : emailo,
+    subject : subjecto,
     message :  messagee
 }
-emailjs.send("service_offjmqy","template_u82rcjr", params).then(function(res) {
-    alert('Success!'+ res.status);
-});
+emailjs.send("service_offjmqy","template_u82rcjr", params)
+// .then(function(res) {
+//     alert('Success!'+ res.status);
+// });
 };
 
 document.querySelector(".send").addEventListener("submit",sendMail());
