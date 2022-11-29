@@ -33,12 +33,12 @@
     <link rel="stylesheet" href="style-Home.css" />
     <title>School</title>
     
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script type="text/javascript">
             (function() {
                 emailjs.init('R3rkCugsrhkrt7L3X');
             })();
-        </script> -->
+        </script>
 <!-- ..................Emailjs.............. -->
   </head>
   <body>
@@ -547,10 +547,10 @@
         </div>
         <!-- ......................................Formulaire........... -->
         <div id="form" class="formulaire">
-        <form>
+<form>
           <div class="full-name">
-            <input id="fullname" type="text" placeholder="Your Name" />
-            <input id="email" type="email" placeholder="Your Email" />
+            <input id="fullName" type="text" placeholder="Your Name" />
+            <input id="email_id" type="email" placeholder="Your Email" />
           </div>
           <div class="subject"><input id="subject" type="text" placeholder="Subject" /></div>
           <div class="message">
@@ -564,7 +564,7 @@
             ></textarea>
           </div>
           <div> <a href="#form"><button class="send" type="submit">Send Message</button> </a></div>
-         </form>
+          </form>
         </div>
       </div>
     </section>
@@ -802,8 +802,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- .................SMtpjs ..............-->
-
-<script src="./script.js"></script>
+    <script src="./script.js" type="text/javascript"></script>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(params) {
+    
+  }
+</script> -->
   </body>
 </html>

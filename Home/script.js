@@ -107,29 +107,21 @@ follow3.addEventListener('click',()=>{
     localStorage.setItem("flwcour3",stor3);
 });
 // ..............Emailjs Pour la formulaire
+let fullname= document.querySelector("#fullName").value;
+let emailo= document.querySelector("#email_id").value;
+let subjecto= document.querySelector("#subject").value;
+let messagee= document.querySelector("#message").value
+function sendMail(){
+    // event.preventDefault();
+var params={ 
+    from_name : fullname ,
+    email_id : emailo ,
+    subject : subjecto ,
+    message :  messagee
+}
+emailjs.send("service_offjmqy","template_u82rcjr", params).then(function(res) {
+    alert('Success!'+ res.status);
+});
+};
 
-//  let fullname= document.querySelector("#fullName");
-// let emailo= document.querySelector("#email_id").value;
-// let subjecto= document.querySelector("#subject").value;
-// let messagee= document.querySelector("#message").value
-// function sendMail(event){
-//     event.preventDefault();
-// var params={ 
-//     from_name : fullname ,
-//     email_id : emailo ,
-//     subject : subjecto ,
-//     message :  messagee
-// }
-// emailjs.send("service_offjmqy","template_u82rcjr", params).then(function(res) {
-//     alert('Success!'+ res.status);
-// });
-// };
-
- let button= document.querySelector(".send");
- button.addEventListener("click",(e)=>{
-e.preventDefault();
-console.log("heloo");
- });
-
-
-
+document.querySelector(".send").addEventListener("submit",sendMail());
