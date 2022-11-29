@@ -1,58 +1,375 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-    <link rel="stylesheet" href="../Home/style-Home.css">
-    <title>Document</title>
-</head>
-<body>
-      <!-- ................................. Start Nav  ................................-->
-  <nav>
-    <div id="logo">
-      <h1><a href="../Home/index-Home.html">MENTOR</a></h1>
-    </div>
-    <ul class="list">
-      <li><a href="../Home/index-Home.html">Home</a></li>
-      <li><a href="../About/index-About.html">About</a></li>
-      <li><a href="../Courses/">Courses</a></li>
-      <li><a href="../Trainers/">Trainers</a></li>
-      <li><a href="../Eventss/index-Events.html">Events</a></li>
-      <li><a href="../Pricing/">Pricing</a></li>
-      <li>
-        <a href="">Dropdown <i class="fa-solid fa-angle-down"></i></a>
-        <ul class="dropdown1">
-          <li><a href="">Dropdown1 </a></li>
-          <li>
-            <a href="">Dropdown2 <i class="fa-solid fa-angle-down"></i></a>
-            <ul class="dropdown2">
-              <li><a href="">dropdown2--1</a></li>
-              <li><a href="">dropdown2--2</a></li>
-              <li><a href="">dropdown2--3</a></li>
-              <li><a href="">dropdown2--4</a></li>
-              <li><a href="">dropdown2--5</a></li>
-            </ul>
-          </li>
-          <li><a href="">Dropdown3</a></li>
-          <li><a href="">Dropdown4</a></li>
-          <li><a href="">Dropdown5</a></li>
-        </ul>
-      </li>
-      <li><a href="../Contact/">Contact</a></li>
-      <li class="btn"><a href="../Courses/">Get Started</a></li>
-    </ul>
-    <i class="fa-solid fa-bars"></i>
-  </nav>
-      <!-- ...................................... End Nav ...................................-->
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="../images/hero-bg.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../Home/style-Home.css" />
+    <title>School</title>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init('R3rkCugsrhkrt7L3X');
+            })();
+        </script>
+<!-- ..................Emailjs.............. -->
+  </head>
+  <body>
+    <!-- ................................. Start Nav  ................................-->
+    <nav>
+      <div id="logo">
+        <h1><a href="../Home/index-Home.html">MENTOR</a></h1>
+      </div>
+      <ul class="list">
+        <li><a href="../Home/index-Home.html">Home</a></li>
+        <li><a href="../About/index-About.html">About</a></li>
+        <li><a href="../Courses/index-Courses.html">Courses</a></li>
+        <li><a href="../Trainers/index-Trainers.html">Trainers</a></li>
+        <li><a href="../Eventss/index-Events.html">Events</a></li>
+        <li><a href="../Pricing/index-Pricing.html">Pricing</a></li>
+        <li>
+          <a href="">Dropdown <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="dropdown1">
+            <li><a href="">Dropdown1 </a></li>
+            <li>
+              <a href="">Dropdown2 <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="dropdown2">
+                <li><a href="">dropdown2--1</a></li>
+                <li><a href="">dropdown2--2</a></li>
+                <li><a href="">dropdown2--3</a></li>
+                <li><a href="">dropdown2--4</a></li>
+                <li><a href="">dropdown2--5</a></li>
+              </ul>
+            </li>
+            <li><a href="">Dropdown3</a></li>
+            <li><a href="">Dropdown4</a></li>
+            <li><a href="">Dropdown5</a></li>
+          </ul>
+        </li>
+        <li><a href="../Contact/index-Contact.html">Contact</a></li>
+        <li class="btn"><a href="../Courses/index-Courses.html">Get Started</a></li>
+      </ul>
+      <i class="fa-solid fa-bars"></i>
+    </nav>
+    <!-- ...................................... End Nav ...................................-->
+  <!-- ...................................... Start Section14 introduction.................................-->
 
+  <section class="sect14 Introduction">
+    <h2>About Us</h2>
+    <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique
+       quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam 
+       nemo harum praesentium.</p>
+  </section>
+  <!-- ...................................... End Section14 .................................-->
+  
+    <!-- ...................................... Start Section2 .................................-->
+
+    <section class="sect2">
+      <div class="description">
+        <ul class="test">
+          <li>
+            <b>
+              Voluptatem dignissimos provident quasi corporis voluptates sit
+              assumenda.
+            </b>
+          </li>
+          <li>
+            <em
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</em
+            >
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-check"></i>Ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-check"></i>Duis aute irure dolor in
+            reprehenderit in voluptate velit.
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-check"></i>Ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
+            fugiat nulla pariatur.
+          </li>
+          <li>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate
+          </li>
+        </ul>
+      </div>
+      <div class="image-family">
+        <img src="../images/about.jpg" alt="image-family" />
+      </div>
+    </section>
+    <!-- ...................................... End Section2 .................................-->
+    <!-- ...................................... Start Section3 .................................-->
+    <section class="sect3">
+      <div class="number">
+        <h3 class="count">1232</h3>
+        <p>Students</p>
+      </div>
+      <div class="number">
+        <h3 class="count">64</h3>
+        <p>Courses</p>
+      </div>
+      <div class="number">
+        <h3 class="count">42</h3>
+        <p>Events</p>
+      </div>
+      <div class="number">
+        <h3 class="count">15</h3>
+        <p>Trainers</p>
+      </div>
+    </section>
+    <!-- ...................................... End Section3 .................................-->
+   <!-- ...................................... Start Section11 .................................-->
+   <section class="sect11">
+    <div class="grand-titre">
+      <h5>TESTIMONIALS</h5>
+      <div class="line"></div>
+      <h2>WHAT ARE THEY SAYING</h2>
+    </div>
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="slick">
+          <div class="testimonial-photo">
+            <img src="../images/testimonials-1.jpg" alt="testimonials-1" />
+          </div>
+          <div class="testimonial-name">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo & Founder</h4>
+          </div>
+          <div class="testimonial-content">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>
+              <em
+                ><q>
+                  Proin iaculis purus consequat sem cure digni ssim donec
+                  porttitora entum suscipit rhoncus. Accusantium quam,
+                  ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                  risus at semper.
+                </q></em
+              >
+            </p>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="slick">
+          <div class="testimonial-photo">
+            <img src="../images/testimonials-2.jpg" alt="testimonials-2" />
+          </div>
+          <div class="testimonial-name">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+          </div>
+          <div class="testimonial-content">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>
+              <em
+                ><q>
+                  Proin iaculis purus consequat sem cure digni ssim donec
+                  porttitora entum suscipit rhoncus. Accusantium quam,
+                  ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                  risus at semper.</q
+                ></em
+              >
+            </p>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="slick">
+          <div class="testimonial-photo">
+            <img src="../images/testimonials-3.jpg" alt="testimonials-3" />
+          </div>
+          <div class="testimonial-name">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+          </div>
+          <div class="testimonial-content">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>
+              <em
+                ><q>
+                  Proin iaculis purus consequat sem cure digni ssim donec
+                  porttitora entum suscipit rhoncus. Accusantium quam,
+                  ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                  risus at semper.</q
+                ></em
+              >
+            </p>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="slick">
+          <div class="testimonial-photo">
+            <img src="../images/testimonials-4.jpg" alt="testimonials-4" />
+          </div>
+          <div class="testimonial-name">
+            <h3>Matt brandon</h3>
+            <h4>Freelancer</h4>
+          </div>
+          <div class="testimonial-content">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>
+              <em
+                ><q>
+                  Proin iaculis purus consequat sem cure digni ssim donec
+                  porttitora entum suscipit rhoncus. Accusantium quam,
+                  ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                  risus at semper.</q
+                ></em
+              >
+            </p>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="slick">
+          <div class="testimonial-photo">
+            <img src="../images/testimonials-5.jpg" alt="testimonials-5" />
+          </div>
+          <div class="testimonial-name">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+          </div>
+          <div class="testimonial-content">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>
+              <em
+                ><q>
+                  Proin iaculis purus consequat sem cure digni ssim donec
+                  porttitora entum suscipit rhoncus. Accusantium quam,
+                  ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                  risus at semper.</q
+                ></em
+              >
+            </p>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ...................................... End Section11 .................................-->
+ <!-- ...................................... Start Section12 .................................-->
+
+ <section class="sect12">
+  <div class="footer-item Mentor">
+    <div class="mentor-item mentor-name">
+      <h2>Mentor</h2>
+    </div>
+    <div class="mentor-item mentor-address">
+      <p><address>A108 Adam Street
+        New York, NY 535022
+        United States</address> </p>
+    </div>
+    <div class="mentor-item mentor-phone">
+      <p><b>Phone:</b>+1 5589 55488 55</p>
+      <p><b>Email:</b> info@example.com</p>
+    </div>
+  </div>
+  <div class="footer-item Links Useful-Links">
+    <h3>Useful Links</h3>
+    <ul>
+      <li><i class="fa-solid fa-angle-right"></i><a href="">Home</a></li>
+      <li><i class="fa-solid fa-angle-right"></i><a href="">About Us</a></li>
+      <li><i class="fa-solid fa-angle-right"></i><a href="">Services</a></li>
+      <li><i class="fa-solid fa-angle-right"></i><a href="">Terms of service</a></li>
+      <li><i class="fa-solid fa-angle-right"></i><a href="">Privacy policy</a></li>
+    </ul>
+  </div>
+  <div class="footer-item Links Our-Services">
+    <h3>Our Services</h3>
+    <ul>
+      <li><i class="fa-solid fa-angle-right"></i><a href="">Web Design</a></li>
+      <li><i class="fa-solid fa-angle-right"></i><a href="">Web Development</a></li>
+      <li><i class="fa-solid fa-angle-right"></i><a href="">Product Management</a></li>
+      <li><i class="fa-solid fa-angle-right"></i><a href="">Marketing</a></li>
+      <li><i class="fa-solid fa-angle-right"></i><a href="">Graphic Design</a></li>
+    </ul>
+  </div>
+  <div class="footer-item newsletter">
+    <h3>Join Our Newsletter</h3>
+    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+    <div class="subscribe"><input pattern="email" type="email" name="email"></input><button>Subscribe</button></div>
+  </div>
+      </section>
+      <!-- ...................................... End Section12 .................................-->
+      <!-- ...................................... Start Section13 .................................-->
+  
+      <section class="sect13">
+  <div class="copyright">
+    <p>© Copyright <b>Mentor.</b> All Rights Reserved</p>
+    <p>Designed by <span>BootstrapMade</span></p>
+  </div>
+  <div class="reseaux-social">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-skype"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </div>
+      </section><a href="#">
+        <div class="triangle"><div class="mini-triangle"><i class="fa-solid fa-arrow-up"></i></div></div></a>
+<!-- ...................................... End Section13 .................................-->
+     
+
+<!-- ..................................script................................... -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../Home/script.js" type="text/javascript"></script>
 </body>
 </html>

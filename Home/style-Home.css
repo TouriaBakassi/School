@@ -726,7 +726,7 @@ font-weight: 500;
   padding: 70px 90px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 .map{
@@ -742,7 +742,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
-padding-top: 40px;
+padding-top: 50px;
 }
 .address{
   width: 35%;
@@ -861,6 +861,7 @@ font-weight: 500;
 .formulaire button{
   text-decoration: none;
   text-align: center;
+  border: none;
   color: white;
   background-color: rgb(95, 207, 128);
   padding: 12px 32px;
@@ -1156,7 +1157,7 @@ transition: all .4s ease-in-out;
 }
 /* ...................................... Start Section 14............................... */
 .Introduction{
-  padding: 60px;
+  padding: 30px 90px;
   background-color: #47b869;
   color: white;
   display: flex;
@@ -1165,7 +1166,15 @@ transition: all .4s ease-in-out;
   flex-direction: column;
   text-align: center;
 }
-
+.Introduction h2{
+  font-size: 30px;
+  font-weight: 500;
+}
+.Introduction p{
+  padding-top:20px ;
+  font-size: 15px;
+  font-weight: 400;
+}
 /* ...................................... End Section 14............................... */
 /* ...................................... Start Section 15............................... */
 
