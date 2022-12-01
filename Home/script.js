@@ -10,7 +10,7 @@ iconbar.addEventListener("click",()=>{
 //  Counter-Up for Numbers
 $('.count').counterUp({
     delay: 5,
-    time: 1500
+    time: 1000
 });
 // Slides the Testimonials with "Slick"
 $('.testimonials').slick({
