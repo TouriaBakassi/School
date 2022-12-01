@@ -1120,7 +1120,7 @@ color: rgb(45, 45, 45);
 }
 .reseaux-social i{
 padding: 10px;
-margin: 0px 3px;
+margin: 3px;
 color: white;
 background-color: #47b869;
 border-radius: 50%;
@@ -1236,6 +1236,8 @@ transition: all .4s ease-in-out;
 
 @media screen and (max-width: 1100px) {
   /* ...........................Start Nav .................................... */
+  nav {
+    padding: 20px 60px;}
   .fa-bars {
     display: block;
     margin-left: 10px;
@@ -1416,12 +1418,8 @@ transition: all .4s ease-in-out;
   align-items: flex-start;
   flex-direction: column;
 }
-.formulaire{
+#form{
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
     }
 
 /* ......................................Section 11............................... */
