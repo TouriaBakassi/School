@@ -18,3 +18,5 @@ const form= document.getElementById("form");
       alert(JSON.stringify(err));
     });
 });
+// ................................ AOS 
+AOS.init();
