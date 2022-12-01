@@ -1,5 +1,23 @@
+// .................Emailjs
+const btn = document.getElementById('button');
+const form= document.getElementById("form");
+ form.addEventListener('submit', function(event) {
+   event.preventDefault();
 
+   btn.value = 'Sending...';
+   
+   const serviceID = 'default_service';
+   const templateID = 'template_u82rcjr';
 
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
 // Open and Close the Navbar-list 
 var iconbar= document.querySelector(".fa-bars");
 var list= document.querySelector(".list");
@@ -106,24 +124,25 @@ follow3.addEventListener('click',()=>{
     follow3.style.color="green";
     localStorage.setItem("flwcour3",stor3);
 });
-// .......................... Emailjs Pour la formulaire
+// ...................................... Emailjs Pour la formulaire
 
-let fullname= document.querySelector("#fullName").value;
-let emailo= document.querySelector("#email_id").value;
-let subjecto= document.querySelector("#subject").value;
-let messagee= document.querySelector("#message").value
-function sendMail(){
-    // event.preventDefault();
-var params={ 
-    from_name : fullname,
-    email_id : emailo,
-    subject : subjecto,
-    message :  messagee
-}
-emailjs.send("service_offjmqy","template_u82rcjr", params)
-// .then(function(res) {
-//     alert('Success!'+ res.status);
-// });
-};
+// let fullname= document.querySelector("#fullName").value;
+// let emailo= document.querySelector("#email_id").value;
+// let subjecto= document.querySelector("#subject").value;
+// let messagee= document.querySelector("#message").value
+// function sendMail(){
+//     // event.preventDefault();
+// var params={ 
+//     from_name : fullname,
+//     email_id : emailo,
+//     subject : subjecto,
+//     message :  messagee
+// }
+// emailjs.send("service_offjmqy","template_u82rcjr", params)
+// // .then(function(res) {
+// //     alert('Success!'+ res.status);
+// // });
+// };
 
-document.querySelector(".send").addEventListener("submit",sendMail());
+// document.querySelector(".send").addEventListener("submit",sendMail());
+

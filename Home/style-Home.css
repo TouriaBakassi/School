@@ -786,17 +786,17 @@ align-items: center;
     background-color: rgb(58, 193, 98);
     transition: all .3s ease-in-out;
       }
-  .formulaire{
+#form{
 width: 65%;
 display: flex;
 justify-content: space-between;
 align-items: center;
 flex-direction: column;
   } 
-.formulaire input:focus{
+  #form input:focus{
 border: 1px solid rgb(35, 185, 80);
       }
-.formulaire textarea:focus{
+      #form textarea:focus{
 border: 1px solid rgb(35, 185, 80);
               } 
 .full-name{
@@ -858,7 +858,7 @@ font-weight: 500;
   background-color: rgb(58, 193, 98);
   transition: all .3s ease-in-out;
 } */
-.formulaire button{
+#form button{
   text-decoration: none;
   text-align: center;
   border: none;
@@ -870,10 +870,17 @@ font-weight: 500;
   font-weight: 500;
   transition: all .3s ease-in-out;  
 }
-.formulaire button:hover{
+#form button:hover{
   background-color: rgb(58, 193, 98);
   transition: all .3s ease-in-out;
 }
+/* ............................Form emailjs....................... */
+
+
+
+
+
+
 /* ...................................... End Section 10............................... */
 /* ...................................... Start Section 11............................... */
 .sect11{
