@@ -30,6 +30,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../Home/style-Home.css" />
     <title>School</title>
     
@@ -77,7 +78,9 @@
     <!-- ...................................... Start Section14 introduction.................................-->
 
   <section class="sect14 Introduction">
-    <h2>Courses</h2>
+    <h2 data-aos="zoom-in" data-aos-delay="100"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out" data-aos-once="true">Courses</h2>
     <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique
        quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam 
        nemo harum praesentium.</p>
@@ -85,12 +88,100 @@
   <!-- ...................................... End Section14 .................................-->
    <!-- ...................................... Start Section6 .................................-->
    <section class="sect6">
-    <div class="grand-titre">
+    <!-- <div class="grand-titre">
       <h5>COURSES</h5>
       <div class="line"></div>
       <h2>POPULAR COURSES</h2>
+    </div> -->
+    <div class="courses" >
+      <div class="cours">
+        <div class="image-cours">
+          <img src="../images/course-1.jpg" alt="course-1" />
+        </div>
+        <div class="prix">
+          <a href="">Web Development</a>
+          <h4>$169</h4>
+        </div>
+        <div class="title-cours">
+          <h4>Website Design</h4>
+          <p>
+            Et architecto provident deleniti facere repellat nobis iste. Id
+            facere quia quae dolores dolorem tempore.
+          </p>
+        </div>
+        <div class="prof-name">
+          <div class="img-prof">
+            <img src="../images/prof1.jpg" alt="prof1" />
+            <h5>Antonio</h5>
+          </div>
+          <div class="like-cours">
+            <!-- .......... localstorge ......... -->
+            <i class="fa-regular fa-heart" id="Like-cour1"></i>
+            <p id="cour1">50</p>
+            <i class="fa-regular fa-user" id="follow-cour1"></i>
+            <p id="follow1">65</p>
+          </div>
+        </div>
+      </div>
+      <div class="cours">
+        <div class="image-cours">
+          <img src="../images/course-2.jpg" alt="course-2" />
+        </div>
+        <div class="prix">
+          <a href="">Marketing</a>
+          <h4>$250</h4>
+        </div>
+        <div class="title-cours">
+          <h4>Search Engine Optimization</h4>
+          <p>
+            Et architecto provident deleniti facere repellat nobis iste. Id
+            facere quia quae dolores dolorem tempore.
+          </p>
+        </div>
+        <div class="prof-name">
+          <div class="img-prof">
+            <img src="../images/prof2.jpg" alt="" />
+            <h5>Lana</h5>
+          </div>
+          <div class="like-cours">
+            <i class="fa-regular fa-heart" id="Like-cour2"></i>
+            <p id="cour2">35</p>
+            <i class="fa-regular fa-user" id="follow-cour2"></i>
+            <p id="follow2">42</p>
+          </div>
+        </div>
+      </div>
+      <div class="cours">
+        <div class="image-cours">
+          <img src="../images/course-3.jpg" alt="course-3" />
+        </div>
+        <div class="prix">
+          <a href="">Content</a>
+          <h4>$180</h4>
+        </div>
+        <div class="title-cours">
+          <h4>Copywriting</h4>
+          <p>
+            Et architecto provident deleniti facere repellat nobis iste. Id
+            facere quia quae dolores dolorem tempore.
+          </p>
+        </div>
+        <div class="prof-name">
+          <div class="img-prof">
+            <img src="../images/prof3.jpg" alt="" />
+            <h5>Brandon</h5>
+          </div>
+          <div class="like-cours">
+            <i class="fa-regular fa-heart" id="Like-cour3"></i>
+            <p id="cour3">20</p>
+            <i class="fa-regular fa-user" id="follow-cour3"></i>
+            <p id="follow3">85</p>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- ......................................................................... -->
     <div class="courses">
       <div class="cours">
         <div class="image-cours">
@@ -263,6 +354,7 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 ></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../Home/script.js" type="text/javascript"></script>
 </body>
 </html>
