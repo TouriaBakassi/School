@@ -30,6 +30,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style-Home.css" />
     <title>School</title>
   </head>
@@ -73,7 +74,10 @@
     <!-- ...................................... End Nav ...................................-->
     <!-- ...................................... Start Section1 ...................................-->
     <section class="sect1">
-      <div class="home">
+      <div class="home" data-aos="zoom-in" 
+      data-aos-delay="50"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in-out">
         <h1>Learning Today, Leading Tomorrow</h1>
         <p>We are team of talented designers making websites with Bootstrap</p>
         <button><a href="../Courses/">Get Started</a></button>
@@ -799,7 +803,7 @@
     ></script>
      
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../Home/script.js"></script>
 <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> 

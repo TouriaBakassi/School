@@ -39,7 +39,8 @@ $('.testimonials').slick({
         }
       ]
   });
-
+// ................................ AOS 
+AOS.init();
 // ............................ Localstorge for Courses-Like
 var like1=document.querySelector('#Like-cour1');
 var like2=document.querySelector('#Like-cour2');
