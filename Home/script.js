@@ -83,9 +83,9 @@ var flwcour1=document.querySelector('#follow1');
 var flwcour2=document.querySelector('#follow2');
 var flwcour3=document.querySelector('#follow3');
 
-let stor1= localStorage.getItem("flwcour1")==null?0:localStorage.getItem("flwcour1");
-let stor2= localStorage.getItem("flwcour2")==null?0:localStorage.getItem('flwcour2');
-let stor3= localStorage.getItem("flwcour3")==null?0:localStorage.getItem("flwcour3");
+let stor1= localStorage.getItem("flwcour1")== null?0:localStorage.getItem("flwcour1");
+let stor2= localStorage.getItem("flwcour2")== null?0:localStorage.getItem('flwcour2');
+let stor3= localStorage.getItem("flwcour3")== null?0:localStorage.getItem("flwcour3");
 
 flwcour1.textContent=stor1;
 flwcour2.textContent=stor2;
@@ -108,3 +108,18 @@ follow3.addEventListener('click',()=>{
 });
 // ...................................... Emailjs Pour la formulaire
 
+// ............................Active link
+// const activepage=window.location.pathname;
+// console.log(activepage);
+// let navlinks=document.querySelectorAll("nav a");
+// navlinks.forEach(link=>{
+//   if(link.href.includes(`${activepage}`)){
+//     link.classList.add("active");
+//   }
+// })
+
+$("nav ul li a").each(()=>{
+  $(this).click(function(){
+    $(this).addClass("active").siblings().removeClass("active")
+   })
+})
