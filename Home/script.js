@@ -1,4 +1,5 @@
 
+
 // Open and Close the Navbar-list 
 var iconbar= document.querySelector(".fa-bars");
 var list= document.querySelector(".list");
@@ -42,6 +43,93 @@ $('.testimonials').slick({
 // ................................ AOS 
 AOS.init();
 // ............................ Localstorge for Courses-Like
+// var LINKS=document.querySelectorAll(".link");
+// LINKS.forEach(LINK=>{
+//   LINK.addEventListener("click",()=>{
+//     LINK.classList.remove("link");
+//     LINK.classList.add("link");
+//   })
+// });
+var page=window.location.pathname;
+console.log(page);
+// ...................................................................................
+paypal.Buttons({
+  style: {
+      layout: 'horizontal',
+      color:  'silver',
+      shape:  'pill',
+      label:  'paypal',
+      tagline:false
+    },
+  createOrder: function(data, actions) {
+    // Set up the transaction
+    return actions.order.create({
+      purchase_units: [{
+        amount: {
+          value: '0.00'
+        }
+      }]
+    });
+  }
+}).render('#paypal-button-container1');
+paypal.Buttons({
+  style: {
+      layout: 'horizontal',
+      color:  'silver',
+      shape:  'pill',
+      label:  'paypal',
+      tagline:false
+    },
+  createOrder: function(data, actions) {
+    // Set up the transaction
+    return actions.order.create({
+      purchase_units: [{
+        amount: {
+          value: '19.00'
+        }
+      }]
+    });
+  }
+}).render('#paypal-button-container2');
+paypal.Buttons({
+  style: {
+      layout: 'horizontal',
+      color:  'silver',
+      shape:  'pill',
+      label:  'paypal',
+      tagline:false
+    },
+  createOrder: function(data, actions) {
+    // Set up the transaction
+    return actions.order.create({
+      purchase_units: [{
+        amount: {
+          value: '29.00'
+        }
+      }]
+    });
+  }
+}).render('#paypal-button-container3');
+paypal.Buttons({
+  style: {
+      layout: 'horizontal',
+      color:  'silver',
+      shape:  'pill',
+      label:  'paypal',
+      tagline:false
+    },
+  createOrder: function(data, actions) {
+    // Set up the transaction
+    return actions.order.create({
+      purchase_units: [{
+        amount: {
+          value: '49.00'
+        }
+      }]
+    });
+  }
+}).render('#paypal-button-container4');
+// ..................................................................................
 var like1=document.querySelector('#Like-cour1');
 var like2=document.querySelector('#Like-cour2');
 var like3=document.querySelector('#Like-cour3');
@@ -106,7 +194,7 @@ follow3.addEventListener('click',()=>{
     follow3.style.color="green";
     localStorage.setItem("flwcour3",stor3);
 });
-
+// ...................................... Emailjs Pour la formulaire
 
 // ............................Active link
 // const activepage=window.location.pathname;
@@ -123,3 +211,5 @@ follow3.addEventListener('click',()=>{
 //     $(this).addClass("active").siblings().removeClass("active")
 //    })
 // })
+// ........................................................................................
+
