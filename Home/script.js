@@ -106,7 +106,7 @@ follow3.addEventListener('click',()=>{
     follow3.style.color="green";
     localStorage.setItem("flwcour3",stor3);
 });
-// ...................................... Emailjs Pour la formulaire
+
 
 // ............................Active link
 // const activepage=window.location.pathname;
@@ -118,8 +118,8 @@ follow3.addEventListener('click',()=>{
 //   }
 // })
 
-$("nav ul li a").each(()=>{
-  $(this).click(function(){
-    $(this).addClass("active").siblings().removeClass("active")
-   })
-})
+// $("nav ul li a").each(()=>{
+//   $(this).click(function(){
+//     $(this).addClass("active").siblings().removeClass("active")
+//    })
+// })

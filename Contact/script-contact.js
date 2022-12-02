@@ -1,4 +1,4 @@
-// .................Emailjs
+// ...................................... Emailjs Pour la formulaire
 const btn = document.getElementById('button');
 const form= document.getElementById("form");
  form.addEventListener('submit', function(event) {
@@ -18,5 +18,5 @@ const form= document.getElementById("form");
       alert(JSON.stringify(err));
     });
 });
-// ................................ AOS 
+// ................................... AOS Initialize  
 AOS.init();
