@@ -1198,6 +1198,42 @@ transition: all .4s ease-in-out;
 }
 /* ...................................... End Section 14............................... */
 /* ...................................... Start Section 15............................... */
+.sect15{
+  padding: 50px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.details{
+  width: 60%;
+  margin: 10px;
+}
+.details-img{
+  width: 100%;
+}
+.details-img img{
+  width: 100%;
+}
+.courses-informations{
+  width: 36%;
+  margin: 10px;
+}
+.courses-informations .part{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
 
 /* ...................................... End Section 15............................... */
 /* ...................................... Start Section 16............................... */
