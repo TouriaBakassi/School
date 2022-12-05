@@ -1222,7 +1222,7 @@ transition: all .4s ease-in-out;
 margin: 25px 0px;
 }
 .courses-paragraph h2{
-  color: rgb(57, 57, 57);
+  color: rgb(68, 68, 68);
   padding: 15px 0px;
 }
 .courses-paragraph p{
@@ -1236,7 +1236,6 @@ margin: 25px 0px;
 
 .courses-informations{
   width: 32%;
-  vertical-align: top;
 }
 .courses-informations .part{
   width: 100%;
@@ -1244,31 +1243,91 @@ margin: 25px 0px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px ;
-  padding: 10px;
+  padding: 13px;
   font-size: 17px;
   font-weight: 500;
-  background-color:rgb(240, 240, 240) ;
+  background-color:rgb(246, 247, 246) ;
 }
 .part .key{
 color: rgb(91, 91, 91);
 }
 .part .value{
   font-weight: 600;
+  color: rgb(72, 72, 72);
 }
 .part .value1{
-  font-weight: 600;
-  color:rgb(70, 128, 0);
+  
+  color:rgb(101, 122, 109);
 }
-
-
-
-
-
-
-
 /* ...................................... End Section 15............................... */
 /* ...................................... Start Section 16............................... */
-
+.sect16{
+  padding: 50px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.iframes{
+  width: 75%; 
+   /* border: 1px solid darkturquoise; */
+}
+iframe{
+  width: 100%;
+  padding: 5px 20px;
+  /* overflow: hidden; */
+  text-align: center;
+  display: none;
+}
+.table{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.table .description{
+  width: 70%;
+}
+.table .description h2{
+  color: rgb(34, 34, 34);
+  padding: 10px 0px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.table .description p,
+.table .description p em{
+  color: rgb(151, 150, 150);
+  padding: 10px 0px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.table .image-cour{
+  width: 33%;
+  background-color: #0d6efd;
+}
+.table .image-cour img{
+  width: 100%;
+  object-fit: cover;
+}
+.sect16 ul{
+  padding: 2px 0px;border-collapse: collapse;
+  width: 25%;
+  border-right: 1px solid rgb(232, 232, 232);
+}
+.sect16 ul li{
+  width: 100%;
+  /* display: inline-block; */
+  padding: 20px 10px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+.sect16 ul li:hover{
+  border-right: 2px solid rgb(58, 193, 98);
+}
+.open{
+  display: block;
+  color: red;
+}
 /* ...................................... End Section 16............................... */
 
 

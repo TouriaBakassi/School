@@ -1,5 +1,4 @@
 
-
 // Open and Close the Navbar-list 
 var iconbar= document.querySelector(".fa-bars");
 var list= document.querySelector(".list");
@@ -42,6 +41,75 @@ $('.testimonials').slick({
   });
 // ................................ AOS 
 AOS.init();
+// .....................................................................
+
+
+var link=document.querySelectorAll(".link")
+var link1=document.querySelector(".link1");
+var link2=document.querySelector(".link2");
+var link3=document.querySelector(".link3");
+var link4=document.querySelector(".link4");
+var link5=document.querySelector(".link5");
+
+var iframe=document.querySelectorAll(".iframe")
+var iframe1=document.querySelector(".iframe1");
+var iframe2=document.querySelector(".iframe2");
+var iframe3=document.querySelector(".iframe3");
+var iframe4=document.querySelector(".iframe4");
+var iframe5=document.querySelector(".iframe5");
+
+link1.addEventListener("click",()=>{
+    iframe.forEach(item=>{
+        item.classList.remove("open");
+    });
+    link.forEach(item=>{
+        item.style.color="black";;
+    });
+    link1.style.color="rgb(58, 193, 98)";
+    iframe1.classList.add("open");
+    like1.style.borderRight = "2px solid rgb(58, 193, 98)";
+});
+
+link2.addEventListener("click",()=>{
+    iframe.forEach(item=>{
+        item.classList.remove("open");
+    });
+    link.forEach(item=>{
+        item.style.color="black";;
+    });
+    link2.style.color="rgb(58, 193, 98)";
+    iframe2.classList.add("open");   
+});
+link3.addEventListener("click",()=>{
+    iframe.forEach(item=>{
+        item.classList.remove("open");
+    });
+    link.forEach(item=>{
+        item.style.color="black";;
+    });
+    link3.style.color="rgb(58, 193, 98)";
+    iframe3.classList.add("open");
+});
+link4.addEventListener("click",()=>{
+    iframe.forEach(item=>{
+        item.classList.remove("open");
+    });
+    link.forEach(item=>{
+        item.style.color="black";;
+    });
+    link4.style.color="red";
+    iframe4.classList.add("open");
+});
+link5.addEventListener("click",()=>{
+  iframe.forEach(item=>{
+      item.classList.remove("open");
+  });
+  link.forEach(item=>{
+      item.style.color="black";
+  });
+  link5.style.color="red";
+  iframe5.classList.add("open");
+});
 // ............................ Localstorge for Courses-Like
 // var LINKS=document.querySelectorAll(".link");
 // LINKS.forEach(LINK=>{
