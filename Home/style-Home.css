@@ -1266,6 +1266,7 @@ color: rgb(91, 91, 91);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .iframes{
   width: 75%; 
@@ -1301,32 +1302,39 @@ iframe{
 }
 .table .image-cour{
   width: 33%;
-  background-color: #0d6efd;
+  background-color: rgb(58, 193, 98);
 }
 .table .image-cour img{
   width: 100%;
   object-fit: cover;
 }
 .sect16 ul{
-  padding: 2px 0px;border-collapse: collapse;
   width: 25%;
-  border-right: 1px solid rgb(232, 232, 232);
+  
 }
 .sect16 ul li{
   width: 100%;
-  /* display: inline-block; */
   padding: 20px 10px;
   list-style: none;
   font-size: 16px;
   font-weight: 600;
+  border-right: 1px solid rgb(232, 232, 232);
   
 }
 .sect16 ul li:hover{
-  border-right: 2px solid rgb(58, 193, 98);
+ color:  rgb(116, 216, 146);
+ border-color: rgb(58, 193, 98);
 }
+.active{
+  color: white;
+ background-color:rgb(48, 161, 82) ;
+  border-right-color: rgb(58, 193, 98);
+}
+
 .open{
   display: block;
-  color: red;
+  /* color: red; */
+  /* border-right: 2px solid rgb(58, 193, 98); */
 }
 /* ...................................... End Section 16............................... */
 
@@ -1348,9 +1356,28 @@ iframe{
 
 
 
-
-
-
+@media screen and (max-width: 1300px) {
+  .sect16{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .iframes{
+    width: 100%; 
+     /* border: 1px solid darkturquoise; */
+  }
+  .sect16 ul{
+    width: 100%;
+  }
+  .table .description{
+    width: 100%;
+  }
+  .table .image-cour{
+    width: 100%;
+    background-color: rgb(58, 193, 98);
+  }
+ }
 
 
 

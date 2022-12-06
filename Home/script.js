@@ -63,11 +63,12 @@ link1.addEventListener("click",()=>{
         item.classList.remove("open");
     });
     link.forEach(item=>{
-        item.style.color="black";;
+        // item.style.color="";
+        item.classList.remove("active");
     });
-    link1.style.color="rgb(58, 193, 98)";
     iframe1.classList.add("open");
-    like1.style.borderRight = "2px solid rgb(58, 193, 98)";
+    link1.classList.add("active");
+    // link1.style.color="white";
 });
 
 link2.addEventListener("click",()=>{
@@ -75,40 +76,49 @@ link2.addEventListener("click",()=>{
         item.classList.remove("open");
     });
     link.forEach(item=>{
-        item.style.color="black";;
+        // item.style.color="";
+        item.classList.remove("active");
     });
-    link2.style.color="rgb(58, 193, 98)";
-    iframe2.classList.add("open");   
+    iframe2.classList.add("open");
+     link2.classList.add("active"); 
+    //  link2.style.color="white";
 });
 link3.addEventListener("click",()=>{
     iframe.forEach(item=>{
         item.classList.remove("open");
     });
     link.forEach(item=>{
-        item.style.color="black";;
-    });
-    link3.style.color="rgb(58, 193, 98)";
+        // item.style.color="";
+        item.classList.remove("active");
+    }); 
     iframe3.classList.add("open");
+     link3.classList.add("active");
+    // link3.style.color="white";
+   
 });
 link4.addEventListener("click",()=>{
     iframe.forEach(item=>{
         item.classList.remove("open");
     });
     link.forEach(item=>{
-        item.style.color="black";;
+        // item.style.color="";
+        item.classList.remove("active");
     });
-    link4.style.color="red";
+    // link4.style.color="rgb(58, 193, 98)";
     iframe4.classList.add("open");
+    link4.classList.add("active"); 
 });
 link5.addEventListener("click",()=>{
   iframe.forEach(item=>{
       item.classList.remove("open");
   });
   link.forEach(item=>{
-      item.style.color="black";
+      // item.style.color="";
+      item.classList.remove("active");
   });
-  link5.style.color="red";
+  // link5.style.color="rgb(58, 193, 98)";
   iframe5.classList.add("open");
+  link5.classList.add("active"); 
 });
 // ............................ Localstorge for Courses-Like
 // var LINKS=document.querySelectorAll(".link");
