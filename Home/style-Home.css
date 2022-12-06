@@ -1270,13 +1270,11 @@ color: rgb(91, 91, 91);
 }
 .iframes{
   width: 75%; 
-   /* border: 1px solid darkturquoise; */
+  
 }
-iframe{
+.iframe{
   width: 100%;
   padding: 5px 20px;
-  /* overflow: hidden; */
-  text-align: center;
   display: none;
 }
 .table{
@@ -1284,9 +1282,10 @@ iframe{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+ 
 }
 .table .description{
-  width: 65%;
+  width: 70%;
 }
 .table .description h2{
   color: rgb(34, 34, 34);
@@ -1302,9 +1301,10 @@ iframe{
   font-weight: 500;
 }
 .table .image-cour{
-  width: 33%;
+  width: 28%;
   background-color: rgb(58, 193, 98);
   margin: 5px;
+  /* padding: 5px; */
 }
 .table .image-cour img{
   width: 100%;
@@ -1316,7 +1316,7 @@ iframe{
 }
 .sect16 ul li{
   width: 100%;
-  padding: 20px 10px;
+  padding: 15px 10px;
   list-style: none;
   font-size: 16px;
   font-weight: 600;
@@ -1324,19 +1324,17 @@ iframe{
   
 }
 .sect16 ul li:hover{
- color:  rgb(116, 216, 146);
- border-color: rgb(58, 193, 98);
+ color:  rgb(58, 193, 98);
+ 
 }
 .active{
-  color: white;
- background-color:rgb(48, 161, 82) ;
-  border-right-color: rgb(58, 193, 98);
+  color: rgb(58, 193, 98);
+ /* background-color:rgb(48, 161, 82) ; */
+ border-color: rgb(58, 193, 98);
 }
 
 .open{
   display: block;
-  /* color: red; */
-  /* border-right: 2px solid rgb(58, 193, 98); */
 }
 /* ...................................... End Section 16............................... */
 
