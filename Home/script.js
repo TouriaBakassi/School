@@ -7,6 +7,7 @@ iconbar.addEventListener("click",()=>{
     iconbar.classList.toggle("fa-xmark");
     list.classList.toggle("active"); 
 });
+
 //  Counter-Up for Numbers
 $('.count').counterUp({
     delay: 5,
@@ -39,174 +40,10 @@ $('.testimonials').slick({
         }
       ]
   });
+
 // ................................ AOS 
 AOS.init();
-// .....................................................................
 
-
-var link=document.querySelectorAll(".link")
-var link1=document.querySelector(".link1");
-var link2=document.querySelector(".link2");
-var link3=document.querySelector(".link3");
-var link4=document.querySelector(".link4");
-var link5=document.querySelector(".link5");
-
-var iframe=document.querySelectorAll(".iframe")
-var iframe1=document.querySelector(".iframe1");
-var iframe2=document.querySelector(".iframe2");
-var iframe3=document.querySelector(".iframe3");
-var iframe4=document.querySelector(".iframe4");
-var iframe5=document.querySelector(".iframe5");
-
-link1.addEventListener("click",()=>{
-    iframe.forEach(item=>{
-        item.classList.remove("open");
-    });
-    link.forEach(item=>{
-        // item.style.color="";
-        item.classList.remove("active");
-    });
-    iframe1.classList.add("open");
-    link1.classList.add("active");
-    // link1.style.color="white";
-});
-
-link2.addEventListener("click",()=>{
-    iframe.forEach(item=>{
-        item.classList.remove("open");
-    });
-    link.forEach(item=>{
-        // item.style.color="";
-        item.classList.remove("active");
-    });
-    iframe2.classList.add("open");
-     link2.classList.add("active"); 
-    //  link2.style.color="white";
-});
-link3.addEventListener("click",()=>{
-    iframe.forEach(item=>{
-        item.classList.remove("open");
-    });
-    link.forEach(item=>{
-        // item.style.color="";
-        item.classList.remove("active");
-    }); 
-    iframe3.classList.add("open");
-     link3.classList.add("active");
-    // link3.style.color="white";
-   
-});
-link4.addEventListener("click",()=>{
-    iframe.forEach(item=>{
-        item.classList.remove("open");
-    });
-    link.forEach(item=>{
-        // item.style.color="";
-        item.classList.remove("active");
-    });
-    // link4.style.color="rgb(58, 193, 98)";
-    iframe4.classList.add("open");
-    link4.classList.add("active"); 
-});
-link5.addEventListener("click",()=>{
-  iframe.forEach(item=>{
-      item.classList.remove("open");
-  });
-  link.forEach(item=>{
-      // item.style.color="";
-      item.classList.remove("active");
-  });
-  // link5.style.color="rgb(58, 193, 98)";
-  iframe5.classList.add("open");
-  link5.classList.add("active"); 
-});
-// ............................ Localstorge for Courses-Like
-// var LINKS=document.querySelectorAll(".link");
-// LINKS.forEach(LINK=>{
-//   LINK.addEventListener("click",()=>{
-//     LINK.classList.remove("link");
-//     LINK.classList.add("link");
-//   })
-// });
-var page=window.location.pathname;
-console.log(page);
-// ...................................................................................
-paypal.Buttons({
-  style: {
-      layout: 'horizontal',
-      color:  'silver',
-      shape:  'pill',
-      label:  'paypal',
-      tagline:false
-    },
-  createOrder: function(data, actions) {
-    // Set up the transaction
-    return actions.order.create({
-      purchase_units: [{
-        amount: {
-          value: '0.00'
-        }
-      }]
-    });
-  }
-}).render('#paypal-button-container1');
-paypal.Buttons({
-  style: {
-      layout: 'horizontal',
-      color:  'silver',
-      shape:  'pill',
-      label:  'paypal',
-      tagline:false
-    },
-  createOrder: function(data, actions) {
-    // Set up the transaction
-    return actions.order.create({
-      purchase_units: [{
-        amount: {
-          value: '19.00'
-        }
-      }]
-    });
-  }
-}).render('#paypal-button-container2');
-paypal.Buttons({
-  style: {
-      layout: 'horizontal',
-      color:  'silver',
-      shape:  'pill',
-      label:  'paypal',
-      tagline:false
-    },
-  createOrder: function(data, actions) {
-    // Set up the transaction
-    return actions.order.create({
-      purchase_units: [{
-        amount: {
-          value: '29.00'
-        }
-      }]
-    });
-  }
-}).render('#paypal-button-container3');
-paypal.Buttons({
-  style: {
-      layout: 'horizontal',
-      color:  'silver',
-      shape:  'pill',
-      label:  'paypal',
-      tagline:false
-    },
-  createOrder: function(data, actions) {
-    // Set up the transaction
-    return actions.order.create({
-      purchase_units: [{
-        amount: {
-          value: '49.00'
-        }
-      }]
-    });
-  }
-}).render('#paypal-button-container4');
 // ..................................................................................
 var like1=document.querySelector('#Like-cour1');
 var like2=document.querySelector('#Like-cour2');
@@ -272,6 +109,48 @@ follow3.addEventListener('click',()=>{
     follow3.style.color="green";
     localStorage.setItem("flwcour3",stor3);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ............................ Localstorge for Courses-Like
+// var LINKS=document.querySelectorAll(".link");
+// LINKS.forEach(LINK=>{
+//   LINK.addEventListener("click",()=>{
+//     LINK.classList.remove("link");
+//     LINK.classList.add("link");
+//   })
+// });
+// var page=window.location.pathname;
+// console.log(page);
+// ...................................................................................
+
 // ...................................... Emailjs Pour la formulaire
 
 // ............................Active link
@@ -290,4 +169,46 @@ follow3.addEventListener('click',()=>{
 //    })
 // })
 // ........................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
