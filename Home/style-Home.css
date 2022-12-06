@@ -1302,7 +1302,7 @@ color: rgb(91, 91, 91);
 }
 .table .image-cour{
   width: 28%;
-  background-color: rgb(58, 193, 98);
+  /* background-color: rgb(58, 193, 98); */
   margin: 5px;
   /* padding: 5px; */
 }
