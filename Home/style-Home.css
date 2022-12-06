@@ -1330,9 +1330,11 @@ color: rgb(91, 91, 91);
 .active{
   color: rgb(58, 193, 98);
  /* background-color:rgb(48, 161, 82) ; */
- border-color: rgb(58, 193, 98);
-}
 
+}
+.sect16 ul li.active{
+  border-color: rgb(58, 193, 98);
+}
 .open{
   display: block;
 }
