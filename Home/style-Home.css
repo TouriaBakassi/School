@@ -1283,9 +1283,10 @@ iframe{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .table .description{
-  width: 70%;
+  width: 65%;
 }
 .table .description h2{
   color: rgb(34, 34, 34);
@@ -1303,6 +1304,7 @@ iframe{
 .table .image-cour{
   width: 33%;
   background-color: rgb(58, 193, 98);
+  margin: 5px;
 }
 .table .image-cour img{
   width: 100%;
@@ -1356,28 +1358,7 @@ iframe{
 
 
 
-@media screen and (max-width: 1300px) {
-  .sect16{
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .iframes{
-    width: 100%; 
-     /* border: 1px solid darkturquoise; */
-  }
-  .sect16 ul{
-    width: 100%;
-  }
-  .table .description{
-    width: 100%;
-  }
-  .table .image-cour{
-    width: 100%;
-    background-color: rgb(58, 193, 98);
-  }
- }
+
 
 
 
@@ -1594,7 +1575,27 @@ iframe{
   width: 100%;
   
 }
-/* ......................................Section 15 ................. */
+/* ......................................Section 16 ................. */
+.sect16{
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iframes{
+  width: 100%; 
+   /* border: 1px solid darkturquoise; */
+}
+.sect16 ul{
+  width: 100%;
+}
+.table .description{
+  width: 100%;
+}
+.table .image-cour{
+  width: 100%;
+  background-color: rgb(58, 193, 98);
+}
 
 }
 
