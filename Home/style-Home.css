@@ -1438,7 +1438,7 @@ color: #47b869;
     box-shadow: 0 10 15 rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
     text-align: center;
-    background-color: rgb(214, 169, 169);
+    background-color: white;
     border-radius: 1%;
     z-index: 1;
   }
@@ -1451,7 +1451,7 @@ color: #47b869;
     right: 10px;
     z-index: 5;
     box-shadow: 0 10 15 rgba(0, 0, 0, 0.5);
-    background-color: rgb(222, 180, 180);
+    background-color: white;
     transition: all ease-in-out;
     border-radius: 1%;
   }
