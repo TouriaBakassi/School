@@ -109,58 +109,7 @@ follow3.addEventListener('click',()=>{
     follow3.style.color="green";
     localStorage.setItem("flwcour3",stor3);
 });
-
-var linkNav=document.querySelectorAll(".link-nav");
-var linkNav1=document.querySelector(".link-nav1");
-var linkNav2=document.querySelector(".link-nav2");
-var linkNav3=document.querySelector(".link-nav3");
-var linkNav4=document.querySelector(".link-nav4");
-var linkNav5=document.querySelector(".link-nav5");
-var linkNav6=document.querySelector(".link-nav6");
-var linkNav7=document.querySelector(".link-nav7");
-
-linkNav1.addEventListener("click",()=>{
-  linkNav.forEach(item=>{
-    item.classList.remove(activ);
-  });
-  linkNav1.classList.add(activ);
-});
-linkNav2.addEventListener("click",()=>{
-  linkNav.forEach(item=>{
-    item.classList.remove(activ);
-  });
-  linkNav2.classList.add(activ);
-});
-linkNav3.addEventListener("click",()=>{
-  linkNav.forEach(item=>{
-    item.classList.remove(activ);
-  });
-  linkNav3.classList.add(activ);
-});
-linkNav4.addEventListener("click",()=>{
-  linkNav.forEach(item=>{
-    item.classList.remove(activ);
-  });
-  linkNav4.classList.add(activ);
-});
-linkNav5.addEventListener("click",()=>{
-  linkNav.forEach(item=>{
-    item.classList.remove(activ);
-  });
-  linkNav5.classList.add(activ);
-});
-linkNav6.addEventListener("click",()=>{
-  linkNav.forEach(item=>{
-    item.classList.remove(activ);
-  });
-  linkNav6.classList.add(activ);
-});
-linkNav7.addEventListener("click",()=>{
-  linkNav.forEach(item=>{
-    item.classList.remove(activ);
-  });
-  linkNav7.classList.add(activ);
-});
+// ..................................................................................
 
 
 
