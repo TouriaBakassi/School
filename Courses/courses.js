@@ -1,3 +1,11 @@
+// Open and Close the Navbar-list 
+var iconbar= document.querySelector(".fa-bars");
+var list= document.querySelector(".list");
+
+iconbar.addEventListener("click",()=>{
+    iconbar.classList.toggle("fa-xmark");
+    list.classList.toggle("active"); 
+});
 // ................................ AOS 
 AOS.init();
 // ...................................................................................
