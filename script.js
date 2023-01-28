@@ -1,7 +1,7 @@
 
 // Open and Close the Navbar-list 
-var iconbar= document.querySelector(".fa-bars");
-var list= document.querySelector(".list");
+let iconbar= document.querySelector(".fa-bars");
+let list= document.querySelector(".list");
 
 iconbar.addEventListener("click",()=>{
     iconbar.classList.toggle("fa-xmark");
@@ -45,17 +45,17 @@ $('.testimonials').slick({
 AOS.init();
 
 // ..................................................................................
-var like1=document.querySelector('#Like-cour1');
-var like2=document.querySelector('#Like-cour2');
-var like3=document.querySelector('#Like-cour3');
+let like1=document.querySelector('#Like-cour1');
+let like2=document.querySelector('#Like-cour2');
+let like3=document.querySelector('#Like-cour3');
 
-var cour1=document.querySelector('#cour1');
-var cour2=document.querySelector('#cour2');
-var cour3=document.querySelector('#cour3');
+let cour1=document.querySelector('#cour1');
+let cour2=document.querySelector('#cour2');
+let cour3=document.querySelector('#cour3');
 
-let count1= localStorage.getItem("cour1")==null?0:localStorage.getItem("cour1");
-let count2= localStorage.getItem("cour2")==null?0:localStorage.getItem('cour2');
-let count3= localStorage.getItem("cour3")==null?0:localStorage.getItem("cour3");
+let count1= localStorage.getItem("cour1")== null ? 0:localStorage.getItem("cour1");
+let count2= localStorage.getItem("cour2")== null ? 0:localStorage.getItem('cour2');
+let count3= localStorage.getItem("cour3")== null ? 0:localStorage.getItem("cour3");
 
 cour1.textContent=count1;
 cour2.textContent=count2;
@@ -78,13 +78,13 @@ localStorage.setItem("cour3",count3);
 });
 
 // ...........................  Localstorge for Courses-Follow
-var follow1=document.querySelector('#follow-cour1');
-var follow2=document.querySelector('#follow-cour2');
-var follow3=document.querySelector('#follow-cour3');
+let follow1=document.querySelector('#follow-cour1');
+let follow2=document.querySelector('#follow-cour2');
+let follow3=document.querySelector('#follow-cour3');
 
-var flwcour1=document.querySelector('#follow1');
-var flwcour2=document.querySelector('#follow2');
-var flwcour3=document.querySelector('#follow3');
+let flwcour1=document.querySelector('#follow1');
+let flwcour2=document.querySelector('#follow2');
+let flwcour3=document.querySelector('#follow3');
 
 let stor1= localStorage.getItem("flwcour1")== null?0:localStorage.getItem("flwcour1");
 let stor2= localStorage.getItem("flwcour2")== null?0:localStorage.getItem('flwcour2');
@@ -110,7 +110,15 @@ follow3.addEventListener('click',()=>{
     localStorage.setItem("flwcour3",stor3);
 });
 // ..................................................................................
+let totop=document.querySelector('.mini-triangle');
 
+window.addEventListener('scroll',()=>{
+  if (window.scrollY > 140) {
+  totop.classList.add('show');
+  }else{
+    totop.classList.remove('show');
+  };
+});
 
 
 

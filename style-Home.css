@@ -845,13 +845,16 @@ padding: 10px 0px;
 
 }
 .message textarea{
-  width: 100%;
-height: 25vh;
+  min-width: 100%;
+  max-width: 100%;
+min-height: 25vh;
+max-height: 25vh;
 padding: 13px;
 outline: none;border-radius: 5px;
 border: 1px solid rgb(199, 199, 199);
 font-size: 14px;
 font-weight: 500;
+
 }
 
 /* .formulaire a{
@@ -1165,6 +1168,14 @@ transition: all .4s ease-in-out;
  justify-content: center;
  align-items: center;
  text-align: center;
+ opacity: 1;
+ transform: translateY(200%);
+ transition: all .6s ease-in-out;
+}
+.mini-triangle.show{
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all .6s ease-in-out;
 }
 .mini-triangle i{
   color: white;
@@ -1355,9 +1366,15 @@ color: #47b869;
 .link-nav:hover{
   color: #47b869;
   }
-
-
-
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #5fcf80;
+}
 
 
 
