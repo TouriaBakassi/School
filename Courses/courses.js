@@ -1,6 +1,6 @@
 // Open and Close the Navbar-list 
-var iconbar= document.querySelector(".fa-bars");
-var list= document.querySelector(".list");
+let iconbar= document.querySelector(".fa-bars");
+let list= document.querySelector(".list");
 
 iconbar.addEventListener("click",()=>{
     iconbar.classList.toggle("fa-xmark");
@@ -10,19 +10,19 @@ iconbar.addEventListener("click",()=>{
 AOS.init();
 // ...................................................................................
 // .............................................Courses Details....................................
-var link=document.querySelectorAll(".link")
-var link1=document.querySelector(".link1");
-var link2=document.querySelector(".link2");
-var link3=document.querySelector(".link3");
-var link4=document.querySelector(".link4");
-var link5=document.querySelector(".link5");
+let link=document.querySelectorAll(".link")
+let link1=document.querySelector(".link1");
+let link2=document.querySelector(".link2");
+let link3=document.querySelector(".link3");
+let link4=document.querySelector(".link4");
+let link5=document.querySelector(".link5");
 
-var iframe=document.querySelectorAll(".iframe")
-var iframe1=document.querySelector(".iframe1");
-var iframe2=document.querySelector(".iframe2");
-var iframe3=document.querySelector(".iframe3");
-var iframe4=document.querySelector(".iframe4");
-var iframe5=document.querySelector(".iframe5");
+let iframe=document.querySelectorAll(".iframe")
+let iframe1=document.querySelector(".iframe1");
+let iframe2=document.querySelector(".iframe2");
+let iframe3=document.querySelector(".iframe3");
+let iframe4=document.querySelector(".iframe4");
+let iframe5=document.querySelector(".iframe5");
 
 link1.addEventListener("click",()=>{
     iframe.forEach(item=>{
@@ -88,13 +88,13 @@ link5.addEventListener("click",()=>{
 });
 
 // ..................................................................................
-// var like1=document.querySelector('#Like-cour1');
-// var like2=document.querySelector('#Like-cour2');
-// var like3=document.querySelector('#Like-cour3');
+// let like1=document.querySelector('#Like-cour1');
+// let like2=document.querySelector('#Like-cour2');
+// let like3=document.querySelector('#Like-cour3');
 
-// var cour1=document.querySelector('#cour1');
-// var cour2=document.querySelector('#cour2');
-// var cour3=document.querySelector('#cour3');
+// let cour1=document.querySelector('#cour1');
+// let cour2=document.querySelector('#cour2');
+// let cour3=document.querySelector('#cour3');
 
 // let count1= localStorage.getItem("cour1")==null?0:localStorage.getItem("cour1");
 // let count2= localStorage.getItem("cour2")==null?0:localStorage.getItem('cour2');
@@ -121,13 +121,13 @@ link5.addEventListener("click",()=>{
 // });
 
 // // ...........................  Localstorge for Courses-Follow
-// var follow1=document.querySelector('#follow-cour1');
-// var follow2=document.querySelector('#follow-cour2');
-// var follow3=document.querySelector('#follow-cour3');
+// let follow1=document.querySelector('#follow-cour1');
+// let follow2=document.querySelector('#follow-cour2');
+// let follow3=document.querySelector('#follow-cour3');
 
-// var flwcour1=document.querySelector('#follow1');
-// var flwcour2=document.querySelector('#follow2');
-// var flwcour3=document.querySelector('#follow3');
+// let flwcour1=document.querySelector('#follow1');
+// let flwcour2=document.querySelector('#follow2');
+// let flwcour3=document.querySelector('#follow3');
 
 // let stor1= localStorage.getItem("flwcour1")== null?0:localStorage.getItem("flwcour1");
 // let stor2= localStorage.getItem("flwcour2")== null?0:localStorage.getItem('flwcour2');
@@ -152,3 +152,21 @@ link5.addEventListener("click",()=>{
 //     follow3.style.color="green";
 //     localStorage.setItem("flwcour3",stor3);
 // });
+
+// ..................................................................................
+let totop=document.querySelector('.mini-triangle');
+
+window.addEventListener('scroll',()=>{
+  if (window.scrollY > 140) {
+  totop.classList.add('show');
+  }else{
+    totop.classList.remove('show');
+  };
+});
+// .....Loader Page
+let loader=document.querySelector(".loader");
+  window.addEventListener("load",()=>{
+    setTimeout(() => {
+   loader.style.display="none";   
+    }, 400);
+});

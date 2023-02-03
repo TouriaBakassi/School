@@ -1,3 +1,22 @@
+// ..................................................................................
+let totop=document.querySelector('.mini-triangle');
+
+window.addEventListener('scroll',()=>{
+  if (window.scrollY > 140) {
+  totop.classList.add('show');
+  }else{
+    totop.classList.remove('show');
+  };
+});
+// .....Loader Page
+let loader=document.querySelector(".loader");
+  window.addEventListener("load",()=>{
+    setTimeout(() => {
+   loader.style.display="none";   
+    }, 400);
+});
+
+
 
 // Open and Close the Navbar-list 
 let iconbar= document.querySelector(".fa-bars");
@@ -109,16 +128,7 @@ follow3.addEventListener('click',()=>{
     follow3.style.color="green";
     localStorage.setItem("flwcour3",stor3);
 });
-// ..................................................................................
-let totop=document.querySelector('.mini-triangle');
 
-window.addEventListener('scroll',()=>{
-  if (window.scrollY > 140) {
-  totop.classList.add('show');
-  }else{
-    totop.classList.remove('show');
-  };
-});
 
 
 

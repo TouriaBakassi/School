@@ -1,6 +1,6 @@
   // Open and Close the Navbar-list 
-var iconbar= document.querySelector(".fa-bars");
-var list= document.querySelector(".list");
+let iconbar= document.querySelector(".fa-bars");
+let list= document.querySelector(".list");
 
 iconbar.addEventListener("click",()=>{
     iconbar.classList.toggle("fa-xmark");
@@ -87,3 +87,20 @@ paypal.Buttons({
 
 // ................................ AOS 
 AOS.init();
+// ..................................................................................
+let totop=document.querySelector('.mini-triangle');
+
+window.addEventListener('scroll',()=>{
+  if (window.scrollY > 140) {
+  totop.classList.add('show');
+  }else{
+    totop.classList.remove('show');
+  };
+});
+// .....Loader Page
+let loader=document.querySelector(".loader");
+  window.addEventListener("load",()=>{
+    setTimeout(() => {
+   loader.style.display="none";   
+    }, 400);
+});

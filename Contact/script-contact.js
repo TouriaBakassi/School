@@ -28,3 +28,21 @@ const form= document.getElementById("form");
 });
 // ................................... AOS Initialize  
 AOS.init();
+// ..................................................................................
+let totop=document.querySelector('.mini-triangle');
+
+window.addEventListener('scroll',()=>{
+  if (window.scrollY > 140) {
+  totop.classList.add('show');
+  }else{
+    totop.classList.remove('show');
+  };
+});
+
+// .....Loader Page
+let loader=document.querySelector(".loader");
+  window.addEventListener("load",()=>{
+    setTimeout(() => {
+   loader.style.display="none";   
+    }, 400);
+});
