@@ -11,9 +11,9 @@ window.addEventListener('scroll',()=>{
 // .....Loader Page
 let loader=document.querySelector(".loader");
   window.addEventListener("load",()=>{
-    setTimeout(() => {
+    // setTimeout(() => {
    loader.style.display="none";   
-    }, 400);
+    // }, 400);
 });
 
 
