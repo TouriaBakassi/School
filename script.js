@@ -1,3 +1,6 @@
+
+// ................................ AOS 
+AOS.init();
 // ..................................................................................
 let totop=document.querySelector('.mini-triangle');
 
@@ -71,9 +74,9 @@ let cour1=document.querySelector('#cour1');
 let cour2=document.querySelector('#cour2');
 let cour3=document.querySelector('#cour3');
 
-let count1= localStorage.getItem("cour1")== null ? 0:localStorage.getItem("cour1");
-let count2= localStorage.getItem("cour2")== null ? 0:localStorage.getItem('cour2');
-let count3= localStorage.getItem("cour3")== null ? 0:localStorage.getItem("cour3");
+let count1= localStorage.getItem("cour1")== 0 ? 0:localStorage.getItem("cour1");
+let count2= localStorage.getItem("cour2")== 0 ? 0:localStorage.getItem('cour2');
+let count3= localStorage.getItem("cour3")== 0 ? 0:localStorage.getItem("cour3");
 
 cour1.textContent=count1;
 cour2.textContent=count2;
@@ -104,9 +107,9 @@ let flwcour1=document.querySelector('#follow1');
 let flwcour2=document.querySelector('#follow2');
 let flwcour3=document.querySelector('#follow3');
 
-let stor1= localStorage.getItem("flwcour1")== null?0:localStorage.getItem("flwcour1");
-let stor2= localStorage.getItem("flwcour2")== null?0:localStorage.getItem('flwcour2');
-let stor3= localStorage.getItem("flwcour3")== null?0:localStorage.getItem("flwcour3");
+let stor1= localStorage.getItem("flwcour1")== 0?0:localStorage.getItem("flwcour1");
+let stor2= localStorage.getItem("flwcour2")== 0?0:localStorage.getItem('flwcour2');
+let stor3= localStorage.getItem("flwcour3")== 0?0:localStorage.getItem("flwcour3");
 
 flwcour1.textContent=stor1;
 flwcour2.textContent=stor2;
@@ -129,8 +132,6 @@ follow3.addEventListener('click',()=>{
 });
 
 
-// ................................ AOS 
-AOS.init();
 
 
 
