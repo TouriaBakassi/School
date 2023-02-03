@@ -1,3 +1,5 @@
+// ................................ AOS 
+AOS.init();
 // Open and Close the Navbar-list 
 let iconbar= document.querySelector(".fa-bars");
 let list= document.querySelector(".list");
@@ -6,8 +8,7 @@ iconbar.addEventListener("click",()=>{
     iconbar.classList.toggle("fa-xmark");
     list.classList.toggle("active"); 
 });
-// ................................ AOS 
-AOS.init();
+
 // ...................................................................................
 // .............................................Courses Details....................................
 let link=document.querySelectorAll(".link")
