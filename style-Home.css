@@ -125,7 +125,7 @@ nav ul ul li:hover > ul {
 /* ...........................End Nav .................................... */
 /* ...........................Start Sect1 .................................... */
 .sect1 {
-  background: rgba(0, 0, 0, 0.4) url(../images/hero-bg.jpg);
+  background: rgba(0, 0, 0, 0.4) url(./images/hero-bg.jpg);
   background-blend-mode: darken;
   background-size: cover;
   background-repeat: no-repeat;
