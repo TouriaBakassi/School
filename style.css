@@ -298,7 +298,8 @@ border: 1px solid rgb(238, 238, 238);
 margin: 20px 10px;
 }
 .one-div h3{
-   font-size: 22px;
+   font-size: 25px;
+   font-weight: 600;
    margin: 20px 0px;
     }
 .one-div p{
